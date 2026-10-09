@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "verified_date": "2026-10-09",
+  "query_output_sha256": "aa66db13235e0ddb0e29a3b04f6ebe9485ad5042104c5a980b59e576f0c3fb5f",
+  "archived_navigation_audit_sha256": "2f47a967c4d7d75943cf47afe0b4673a44ef5e81afb05136d6733c2c4e08c844",
+  "profile_id": "installed-re-client-20260827",
+  "profile_sha256": "87db7efe6adb5d7e464612005e826729157afd6ea862a5d68339ee8156214264",
+  "client_identity": {
+    "game_assembly_sha256": "5683ca04c025ada275c5412101d3fe40bec55b31fd268f30370b91dd612574d7",
+    "metadata_sha256": "7f389eb79e4b94ecb65d43d054c6d88c9749bc67a651d90a66a0494285e342ce",
+    "metadata_version": 31
+  },
+  "source_count": 866,
+  "roundtrips_verified": 866,
+  "sources": [
+    {
+      "path": "Logic/Stage.lua",
+      "encrypted_bytes": 59984,
+      "encrypted_sha256": "901f06c0cf26f7bc9bb8310435b0bb53c7233e61f6cdd2ab3fb90ee7ab1e19e8",
+      "decrypted_bytes": 59968,
+      "decrypted_sha256": "784b5098241463159112b29fa81ca23dfa9a2cc24dd3fe20ec29f1a05df52605",
+      "line_count": 1834
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "encrypted_bytes": 167616,
+      "encrypted_sha256": "1966f014a14f56823112c4612ebcb92ada5037170578f378e8fadd3e467c68c2",
+      "decrypted_bytes": 167604,
+      "decrypted_sha256": "c17155483357bdd7e6f6986e0e60cbc9e3b5f4d833d5a10c52858069ccf223f4",
+      "line_count": 4183
+    }
+  ],
+  "lines": [
+    {
+      "path": "Logic/Stage.lua",
+      "line": 66,
+      "text": "SCALE_RATIO = 0.01;-- 場景放大倍率"
+    },
+    {
+      "path": "Logic/Stage.lua",
+      "line": 67,
+      "text": "TEMP_OFFSET_X = 0;"
+    },
+    {
+      "path": "Logic/Stage.lua",
+      "line": 68,
+      "text": "TEMP_OFFSET_Y = DEFAULT_OFFSET_Y;"
+    },
+    {
+      "path": "Logic/Stage.lua",
+      "line": 165,
+      "text": "function TransferPosition(x, y, isBack, offsetY)"
+    },
+    {
+      "path": "Logic/Stage.lua",
+      "line": 167,
+      "text": "        return (x / SCALE_RATIO - TEMP_OFFSET_X), -(y / SCALE_RATIO - TEMP_OFFSET_Y)"
+    },
+    {
+      "path": "Logic/Stage.lua",
+      "line": 174,
+      "text": "            (x + TEMP_OFFSET_X) * SCALE_RATIO, "
+    },
+    {
+      "path": "Logic/Stage.lua",
+      "line": 176,
+      "text": "            (-y + TEMP_OFFSET_Y) * SCALE_RATIO"
+    },
+    {
+      "path": "Logic/Stage.lua",
+      "line": 387,
+      "text": "    TEMP_OFFSET_Y = data.mapHeight == 65535 and DEFAULT_OFFSET_Y or data.mapHeight"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 24,
+      "text": "    SmallMapSize = 1024,"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 34,
+      "text": "    SmallMapOutLine = 12, -- 小地圖外面留白空間"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 734,
+      "text": "local function _GetRate(mapSize, width, height)"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 735,
+      "text": "    --logError(\"[Debug] width = %s\", width)"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 736,
+      "text": "    --logError(\"[Debug] height = %s\", height)"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 737,
+      "text": "    local rate = 1;"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 738,
+      "text": "    if height == 65535 then"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 739,
+      "text": "        height= 6992"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 740,
+      "text": "    end"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 741,
+      "text": "    if width == 65535 then"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 742,
+      "text": "        width= 6992"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 743,
+      "text": "    end"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 744,
+      "text": "    if width > height then"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 745,
+      "text": "        rate = width / mapSize;"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 746,
+      "text": "        --local widthRate = width / mapSize;"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 747,
+      "text": "        --logError(\"[Debug] widthRate = %s\", widthRate)"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 748,
+      "text": "        --logError(\"[Debug] (100 / widthRate) = %s\", (100 / widthRate))"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 749,
+      "text": "    else"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 750,
+      "text": "        rate = height / mapSize;"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 751,
+      "text": "        --logError(\"[Debug] rate = %s\", rate)"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 752,
+      "text": "        --logError(\"[Debug] (100 / rate) = %s\", (100 / rate))"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 753,
+      "text": "    end"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 754,
+      "text": ""
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 755,
+      "text": "    -- 換算成百分比"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 756,
+      "text": "    return (100 / rate);"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 846,
+      "text": "    local pixelX = tempPosition.x * mapInfo.Rate + stageInfo.SmallMapOffsetX"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 847,
+      "text": "    local pixelY = mapSize - (tempPosition.z * mapInfo.Rate + stageInfo.SmallMapOffsetY)"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 1220,
+      "text": "    smallMapInfo.Rate = _GetRate((const.SmallMapSize - (const.SmallMapOutLine) * 2), stageInfo.mapWidth, stageInfo.mapHeight);"
+    },
+    {
+      "path": "UI/Logic/UIMain.lua",
+      "line": 1233,
+      "text": "    areaMapInfo.Rate = _GetRate((const.AreaMapSize - 24), stageInfo.mapWidth, stageInfo.mapHeight);"
+    }
+  ],
+  "formula": {
+    "world_x": "gameX / 100",
+    "world_z": "(mapHeight - gameY) / 100",
+    "rate_per_world_unit": "100000 / max(mapWidth, mapHeight)",
+    "image_x": "worldX * rate + SmallMapOffsetX",
+    "image_y": "1024 - (worldZ * rate + SmallMapOffsetY)"
+  },
+  "resolution": "The recovered client uses one max-axis scale for both axes. This supersedes the older independently stretched WebUI formula for this viewer. Map offsets are translations, not per-axis stretch factors.",
+  "scope": "Current installed Lua is hash-bound and byte-identical for these two files to the earlier navigation audit. Every image and ScenesData input separately binds to the requested managed release."
+}

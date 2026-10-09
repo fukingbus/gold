@@ -1,0 +1,111 @@
+import assert from 'node:assert/strict';
+import { readFile, readdir } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { resolve } from 'node:path';
+
+const root = resolve(import.meta.dirname, '..');
+const load = async name => JSON.parse(await readFile(resolve(root, name), 'utf8'));
+const sha = bytes => createHash('sha256').update(bytes).digest('hex');
+const maps = await load('data/maps.json');
+const mapEvidence = await load('evidence/maps.json');
+assert.equal(maps.release_id, '1.3.19_d6bc1e25_e7df651c');
+assert.equal(maps.release_id, mapEvidence.release_id);
+assert.equal(maps.maps.length, 57, 'Complete logical scene roster');
+assert.equal(new Set(maps.maps.map(m => m.id)).size, 57, 'No collapsed scene templates');
+const byId = new Map(maps.maps.map(m => [m.id, m]));
+assert.equal(byId.get(10161).model_id, 12357, 'Australia logical scene uses Antarctic template');
+assert.equal(byId.get(10162).model_id, 11080, 'Australia logical scene uses dinosaur template');
+assert.equal(byId.get(10071).minimap.type, 'navigation');
+assert.equal(byId.get(12552).minimap.type, 'navigation');
+assert.equal(maps.maps.filter(m => m.minimap.type === 'bitmap').length, 55);
+assert.equal(maps.maps.filter(m => m.minimap.type === 'navigation').length, 2);
+const seenImages = new Set();
+for (const map of maps.maps) {
+  const mini = map.minimap;
+  assert.match(mini.image, /^assets\/maps\/\d+\.png$/);
+  const buffer = await readFile(resolve(root, mini.image));
+  assert.equal(sha(buffer), mini.sha256, `Image hash ${map.id}`);
+  assert.equal(buffer.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
+  assert.equal(buffer.readUInt32BE(16), mini.width);
+  assert.equal(buffer.readUInt32BE(20), mini.height);
+  seenImages.add(mini.image);
+  const ev = mapEvidence.maps.find(row => row.scene_id === map.id);
+  assert.ok(ev, `Missing map evidence ${map.id}`);
+  assert.equal(ev.scene.model_id, map.model_id);
+  const p = mini.projection;
+  for (const value of Object.values(p)) assert.ok(Number.isFinite(value));
+  assert.ok(p.scale_x > 0 && p.scale_y > 0);
+  if (mini.type === 'bitmap') {
+    const width = ev.scene.map_extent.map_width_raw;
+    const height = ev.scene.map_extent.map_height_raw;
+    const expected = 1000 / Math.max(width, height);
+    assert.equal(p.scale_x, expected);
+    assert.equal(p.scale_y, expected);
+    assert.equal(p.offset_x, ev.scene.small_map_offset_x);
+    assert.equal(p.offset_y, 1024 - height * expected - ev.scene.small_map_offset_y);
+    assert.equal(mini.image, `assets/maps/${map.model_id}.png`);
+  }
+}
+assert.equal(seenImages.size, 54);
+const mapFiles = (await readdir(resolve(root, 'assets/maps'))).map(f => `assets/maps/${f}`);
+assert.deepEqual(new Set(mapFiles), seenImages, 'Publish exactly referenced map images');
+console.log('Verified 57 logical scenes, 55 bitmap maps, 2 navigation maps, 54 exact PNG hashes and projection metadata.');
+
+const rosterBytes = await readFile(resolve(root, 'data/chests.json'));
+const roster = JSON.parse(rosterBytes);
+const chestEvidence = await load('evidence/chests.json');
+assert.equal(roster.releaseId, maps.release_id);
+assert.equal(chestEvidence.releaseId, maps.release_id);
+assert.equal(mapEvidence.sources.roster_sha256, sha(rosterBytes));
+assert.equal(chestEvidence.strictAudit.file_count_u32, 1256);
+assert.equal(chestEvidence.strictAudit.exact_eof, true);
+assert.equal(chestEvidence.strictAudit.all_scene_bodies_strictly_validated, true);
+assert.deepEqual(new Set(roster.maps.map(m => m.id)), new Set(byId.keys()));
+const chestIds = new Set();
+let chestCount = 0;
+let withInteraction = 0;
+for (const map of roster.maps) {
+  const imageMap = byId.get(map.id);
+  const evidence = chestEvidence.maps.find(m => m.scene_id === map.id);
+  const scene = evidence.scene_metadata;
+  const header = Buffer.from(evidence.eve_header_hex, 'hex');
+  assert.equal(header.readUInt16LE(0), map.id, 'Runtime eventNumber scene join');
+  assert.equal(header.readUInt16LE(2), map.eveMapNumber);
+  assert.equal(map.modelId, imageMap.model_id);
+  assert.equal(map.name, imageMap.name);
+  assert.equal(scene.scene_id, map.id);
+  const ratioBytes = Buffer.from(scene.ratio_byte_evidence.hex, 'hex');
+  assert.equal(ratioBytes[0], map.ratio.x);
+  assert.equal(ratioBytes[1], map.ratio.y);
+  assert.equal(scene.record_offset + 57, scene.ratio_byte_evidence.absolute_offset);
+  for (const chest of map.chests) {
+    assert.equal(chest.npcId, 19117);
+    assert.equal(chest.name, '黃金寶箱');
+    assert.equal(chest.id, `${map.id}-${chest.slot}`);
+    assert.ok(!chestIds.has(chest.id));
+    chestIds.add(chest.id);
+    const row = evidence.npcs.find(n => n.slot === chest.slot && n.npc_id === chest.npcId);
+    assert.ok(row);
+    const bytes = Buffer.from(row.coordinate_byte_evidence.hex_u32le_x_y, 'hex');
+    assert.equal(bytes.length, 8);
+    assert.equal(bytes.readUInt32LE(0), chest.rawX);
+    assert.equal(bytes.readUInt32LE(4), chest.rawY);
+    assert.equal(row.record_offset + 23, row.coordinate_byte_evidence.absolute_offset);
+    assert.equal(chest.x, chest.rawX * ratioBytes[0]);
+    assert.equal(chest.y, chest.rawY * ratioBytes[1]);
+    const p = imageMap.minimap.projection;
+    const px = chest.x * p.scale_x + p.offset_x;
+    const py = chest.y * p.scale_y + p.offset_y;
+    assert.ok(px >= 0 && px <= imageMap.minimap.width, `Chest X bounds ${chest.id}`);
+    assert.ok(py >= 0 && py <= imageMap.minimap.height, `Chest Y bounds ${chest.id}`);
+    assert.ok(Math.abs((px - p.offset_x) / p.scale_x - chest.x) < 1e-8);
+    assert.ok(Math.abs((py - p.offset_y) / p.scale_y - chest.y) < 1e-8);
+    chestCount++;
+    withInteraction += Number(chest.hasInteraction);
+  }
+}
+assert.equal(chestCount, 58);
+assert.equal(withInteraction, 57);
+assert.equal(roster.maps.find(m => m.id === 12206).chests.length, 2);
+assert.equal(roster.maps.find(m => m.id === 10162).chests[0].hasInteraction, false);
+console.log('Verified all 58 independent coordinate byte anchors, raw-to-game ratios, logical scene joins, image bounds and inverse projection.');

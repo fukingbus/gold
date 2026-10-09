@@ -1,0 +1,2715 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "1.3.19_d6bc1e25_e7df651c",
+  "clientVersion": "1.3.19",
+  "sourceNote": "遊戲名稱：黃金寶箱。依 1.3.19 本地事件資料整理；是否可開啟及即時出現狀態以遊戲伺服器為準。",
+  "coverage": {
+    "eveScenes": 1256,
+    "sceneDefinitions": 1336,
+    "npcDefinitions": 7543,
+    "maps": 57,
+    "chests": 58,
+    "withInteraction": 57,
+    "battleReferences": 0
+  },
+  "maps": [
+    {
+      "id": 10070,
+      "name": "雷龍島",
+      "region": "分區 6",
+      "mapGroup": 6,
+      "modelId": 10070,
+      "eveMapNumber": 10070,
+      "mapExtent": {
+        "width": 11650,
+        "height": 12800
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 56,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "10070-6",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 6,
+          "x": 5544,
+          "y": 4600,
+          "rawX": 2772,
+          "rawY": 1150,
+          "eventIds": [
+            9,
+            16,
+            15
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10071,
+      "name": "席貝兒的家",
+      "region": "分區 10",
+      "mapGroup": 10,
+      "modelId": 10071,
+      "eveMapNumber": 10071,
+      "mapExtent": {
+        "width": 1660,
+        "height": 2560
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "chests": [
+        {
+          "id": "10071-1",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 1,
+          "x": 850,
+          "y": 1224,
+          "rawX": 425,
+          "rawY": 306,
+          "eventIds": [
+            3,
+            4,
+            5
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10161,
+      "name": "澳洲山頂通道",
+      "region": "未分區",
+      "mapGroup": 0,
+      "modelId": 12357,
+      "eveMapNumber": 12357,
+      "mapExtent": {
+        "width": 11520,
+        "height": 11520
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "10161-6",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 6,
+          "x": 4090,
+          "y": 3296,
+          "rawX": 2045,
+          "rawY": 824,
+          "eventIds": [
+            9,
+            15,
+            16
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10162,
+      "name": "澳洲山頂通道",
+      "region": "未分區",
+      "mapGroup": 0,
+      "modelId": 11080,
+      "eveMapNumber": 11080,
+      "mapExtent": {
+        "width": 8240,
+        "height": 8240
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "10162-8",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 8,
+          "x": 3966,
+          "y": 6084,
+          "rawX": 1983,
+          "rawY": 1521,
+          "eventIds": [],
+          "leadEventIds": [],
+          "hasInteraction": false,
+          "keyIds": [],
+          "conditions": [
+            "此本地位置未附互動事件"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11037,
+      "name": "司徒華島迷宮二層",
+      "region": "分區 3",
+      "mapGroup": 3,
+      "modelId": 11037,
+      "eveMapNumber": 11037,
+      "mapExtent": {
+        "width": 11520,
+        "height": 11520
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "11037-10",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 10,
+          "x": 4666,
+          "y": 8232,
+          "rawX": 2333,
+          "rawY": 2058,
+          "eventIds": [
+            19
+          ],
+          "leadEventIds": [
+            3
+          ],
+          "hasInteraction": true,
+          "keyIds": [],
+          "conditions": []
+        }
+      ]
+    },
+    {
+      "id": 11069,
+      "name": "夏威夷山洞",
+      "region": "分區 24",
+      "mapGroup": 24,
+      "modelId": 11069,
+      "eveMapNumber": 11069,
+      "mapExtent": {
+        "width": 8640,
+        "height": 8640
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "chests": [
+        {
+          "id": "11069-1",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 1,
+          "x": 6258,
+          "y": 2632,
+          "rawX": 3129,
+          "rawY": 658,
+          "eventIds": [
+            3,
+            5,
+            6
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11080,
+      "name": "恐龍巢穴深處",
+      "region": "分區 4",
+      "mapGroup": 4,
+      "modelId": 11080,
+      "eveMapNumber": 11080,
+      "mapExtent": {
+        "width": 8240,
+        "height": 8240
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "11080-8",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 8,
+          "x": 3966,
+          "y": 6084,
+          "rawX": 1983,
+          "rawY": 1521,
+          "eventIds": [
+            13,
+            14,
+            15
+          ],
+          "leadEventIds": [
+            6
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11087,
+      "name": "樹洞三層",
+      "region": "分區 20",
+      "mapGroup": 20,
+      "modelId": 11087,
+      "eveMapNumber": 11087,
+      "mapExtent": {
+        "width": 8640,
+        "height": 8640
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "11087-8",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 8,
+          "x": 4248,
+          "y": 964,
+          "rawX": 2124,
+          "rawY": 241,
+          "eventIds": [
+            10,
+            11,
+            12
+          ],
+          "leadEventIds": [
+            2
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11122,
+      "name": "幽靈船上層艙",
+      "region": "未分區",
+      "mapGroup": 0,
+      "modelId": 11122,
+      "eveMapNumber": 11122,
+      "mapExtent": {
+        "width": 10080,
+        "height": 10080
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "11122-4",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 4,
+          "x": 7150,
+          "y": 4036,
+          "rawX": 3575,
+          "rawY": 1009,
+          "eventIds": [
+            4,
+            8,
+            9
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11125,
+      "name": "庫克船船艙一層",
+      "region": "未分區",
+      "mapGroup": 0,
+      "modelId": 11125,
+      "eveMapNumber": 11125,
+      "mapExtent": {
+        "width": 10080,
+        "height": 10080
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "11125-7",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 7,
+          "x": 5918,
+          "y": 1056,
+          "rawX": 2959,
+          "rawY": 264,
+          "eventIds": [
+            9,
+            10,
+            11
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11127,
+      "name": "馬達加斯加",
+      "region": "分區 31",
+      "mapGroup": 31,
+      "modelId": 11127,
+      "eveMapNumber": 11127,
+      "mapExtent": {
+        "width": 11650,
+        "height": 12800
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 57,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "11127-5",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 5,
+          "x": 5284,
+          "y": 9100,
+          "rawX": 2642,
+          "rawY": 2275,
+          "eventIds": [
+            13,
+            14,
+            15
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11132,
+      "name": "鄭和艦船艙下層",
+      "region": "未分區",
+      "mapGroup": 0,
+      "modelId": 11132,
+      "eveMapNumber": 11132,
+      "mapExtent": {
+        "width": 7200,
+        "height": 7200
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "11132-1",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 1,
+          "x": 1518,
+          "y": 3296,
+          "rawX": 759,
+          "rawY": 824,
+          "eventIds": [
+            2,
+            6,
+            7
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11135,
+      "name": "半獸人島",
+      "region": "分區 11",
+      "mapGroup": 11,
+      "modelId": 11135,
+      "eveMapNumber": 11135,
+      "mapExtent": {
+        "width": 11650,
+        "height": 12800
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 56,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "11135-17",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 17,
+          "x": 3454,
+          "y": 5800,
+          "rawX": 1727,
+          "rawY": 1450,
+          "eventIds": [
+            25,
+            26,
+            27
+          ],
+          "leadEventIds": [
+            3
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11145,
+      "name": "甲蟲島",
+      "region": "分區 12",
+      "mapGroup": 12,
+      "modelId": 11145,
+      "eveMapNumber": 11145,
+      "mapExtent": {
+        "width": 11650,
+        "height": 12800
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 57,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "11145-1",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 1,
+          "x": 5544,
+          "y": 9056,
+          "rawX": 2772,
+          "rawY": 2264,
+          "eventIds": [
+            10,
+            11,
+            12
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11164,
+      "name": "火星",
+      "region": "未分區",
+      "mapGroup": 0,
+      "modelId": 11164,
+      "eveMapNumber": 11164,
+      "mapExtent": {
+        "width": 3200,
+        "height": 6400
+      },
+      "ratio": {
+        "x": 2,
+        "y": 2
+      },
+      "smallMapOffset": {
+        "x": 261,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "11164-8",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 8,
+          "x": 1286,
+          "y": 4304,
+          "rawX": 643,
+          "rawY": 2152,
+          "eventIds": [
+            6
+          ],
+          "leadEventIds": [
+            3
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11176,
+      "name": "沈船船艙一層",
+      "region": "未分區",
+      "mapGroup": 0,
+      "modelId": 11176,
+      "eveMapNumber": 11176,
+      "mapExtent": {
+        "width": 7200,
+        "height": 7200
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "11176-4",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 4,
+          "x": 2312,
+          "y": 2052,
+          "rawX": 1156,
+          "rawY": 513,
+          "eventIds": [
+            6,
+            7,
+            8
+          ],
+          "leadEventIds": [
+            2
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11182,
+      "name": "月殿通道",
+      "region": "未分區",
+      "mapGroup": 0,
+      "modelId": 11182,
+      "eveMapNumber": 11182,
+      "mapExtent": {
+        "width": 1665,
+        "height": 2560
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 186,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "11182-2",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 2,
+          "x": 1262,
+          "y": 1272,
+          "rawX": 631,
+          "rawY": 318,
+          "eventIds": [
+            3
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12104,
+      "name": "中國森林",
+      "region": "分區 22",
+      "mapGroup": 22,
+      "modelId": 12104,
+      "eveMapNumber": 12104,
+      "mapExtent": {
+        "width": 7384,
+        "height": 7384
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12104-11",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 11,
+          "x": 2540,
+          "y": 4300,
+          "rawX": 1270,
+          "rawY": 1075,
+          "eventIds": [
+            10,
+            13,
+            14
+          ],
+          "leadEventIds": [
+            8
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12110,
+      "name": "長安",
+      "region": "分區 23",
+      "mapGroup": 23,
+      "modelId": 12110,
+      "eveMapNumber": 12110,
+      "mapExtent": {
+        "width": 4592,
+        "height": 6000
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 129,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12110-47",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 47,
+          "x": 538,
+          "y": 2528,
+          "rawX": 269,
+          "rawY": 632,
+          "eventIds": [
+            61
+          ],
+          "leadEventIds": [
+            6
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12126,
+      "name": "長城關道一",
+      "region": "分區 23",
+      "mapGroup": 23,
+      "modelId": 12126,
+      "eveMapNumber": 12126,
+      "mapExtent": {
+        "width": 6498,
+        "height": 5184
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 113
+      },
+      "chests": [
+        {
+          "id": "12126-8",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 8,
+          "x": 3802,
+          "y": 3192,
+          "rawX": 1901,
+          "rawY": 798,
+          "eventIds": [
+            11
+          ],
+          "leadEventIds": [
+            2
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12161,
+      "name": "瑪雅山洞地下",
+      "region": "分區 16",
+      "mapGroup": 16,
+      "modelId": 12161,
+      "eveMapNumber": 12161,
+      "mapExtent": {
+        "width": 11520,
+        "height": 11520
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12161-5",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 5,
+          "x": 2754,
+          "y": 7280,
+          "rawX": 1377,
+          "rawY": 1820,
+          "eventIds": [
+            7,
+            8,
+            9
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12162,
+      "name": "瑪雅地窖二",
+      "region": "分區 16",
+      "mapGroup": 16,
+      "modelId": 12162,
+      "eveMapNumber": 12162,
+      "mapExtent": {
+        "width": 11520,
+        "height": 11520
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12162-9",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 9,
+          "x": 3050,
+          "y": 3352,
+          "rawX": 1525,
+          "rawY": 838,
+          "eventIds": [
+            11,
+            12,
+            13
+          ],
+          "leadEventIds": [
+            4
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12206,
+      "name": "火山迷宮一",
+      "region": "分區 14",
+      "mapGroup": 14,
+      "modelId": 12206,
+      "eveMapNumber": 12206,
+      "mapExtent": {
+        "width": 8640,
+        "height": 8640
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12206-1",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 1,
+          "x": 3198,
+          "y": 7276,
+          "rawX": 1599,
+          "rawY": 1819,
+          "eventIds": [
+            4,
+            8,
+            9
+          ],
+          "leadEventIds": [
+            4
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        },
+        {
+          "id": "12206-7",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 7,
+          "x": 7150,
+          "y": 4700,
+          "rawX": 3575,
+          "rawY": 1175,
+          "eventIds": [
+            7,
+            10,
+            11
+          ],
+          "leadEventIds": [
+            3
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12267,
+      "name": "鳥居洞窟",
+      "region": "分區 27",
+      "mapGroup": 27,
+      "modelId": 12267,
+      "eveMapNumber": 12267,
+      "mapExtent": {
+        "width": 9720,
+        "height": 9720
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12267-6",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 6,
+          "x": 2968,
+          "y": 2736,
+          "rawX": 1484,
+          "rawY": 684,
+          "eventIds": [
+            7,
+            9,
+            10
+          ],
+          "leadEventIds": [
+            2
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12274,
+      "name": "金閣寺一樓",
+      "region": "分區 27",
+      "mapGroup": 27,
+      "modelId": 12274,
+      "eveMapNumber": 12274,
+      "mapExtent": {
+        "width": 11520,
+        "height": 11520
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12274-7",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 7,
+          "x": 2312,
+          "y": 4136,
+          "rawX": 1156,
+          "rawY": 1034,
+          "eventIds": [
+            10,
+            11,
+            12
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12276,
+      "name": "金閣寺三樓",
+      "region": "分區 27",
+      "mapGroup": 27,
+      "modelId": 12276,
+      "eveMapNumber": 12276,
+      "mapExtent": {
+        "width": 8640,
+        "height": 8640
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12276-1",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 1,
+          "x": 3924,
+          "y": 6508,
+          "rawX": 1962,
+          "rawY": 1627,
+          "eventIds": [
+            4,
+            5,
+            6
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12279,
+      "name": "山怪洞窟前段",
+      "region": "分區 27",
+      "mapGroup": 27,
+      "modelId": 12279,
+      "eveMapNumber": 12279,
+      "mapExtent": {
+        "width": 6840,
+        "height": 6840
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12279-4",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 4,
+          "x": 3168,
+          "y": 2832,
+          "rawX": 1584,
+          "rawY": 708,
+          "eventIds": [
+            6,
+            7,
+            8
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12283,
+      "name": "蝦夷山洞二層",
+      "region": "分區 28",
+      "mapGroup": 28,
+      "modelId": 12283,
+      "eveMapNumber": 12283,
+      "mapExtent": {
+        "width": 8640,
+        "height": 8640
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12283-7",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 7,
+          "x": 4310,
+          "y": 1772,
+          "rawX": 2155,
+          "rawY": 443,
+          "eventIds": [
+            9,
+            10,
+            11
+          ],
+          "leadEventIds": [
+            2
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12287,
+      "name": "鬼島洞窟地下一層",
+      "region": "分區 30",
+      "mapGroup": 30,
+      "modelId": 12287,
+      "eveMapNumber": 12287,
+      "mapExtent": {
+        "width": 10080,
+        "height": 10080
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12287-4",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 4,
+          "x": 8916,
+          "y": 4492,
+          "rawX": 4458,
+          "rawY": 1123,
+          "eventIds": [
+            9,
+            10,
+            11
+          ],
+          "leadEventIds": [
+            2
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12357,
+      "name": "南極冰洞一層",
+      "region": "分區 7",
+      "mapGroup": 7,
+      "modelId": 12357,
+      "eveMapNumber": 12357,
+      "mapExtent": {
+        "width": 11520,
+        "height": 11520
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12357-6",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 6,
+          "x": 4090,
+          "y": 3296,
+          "rawX": 2045,
+          "rawY": 824,
+          "eventIds": [
+            9,
+            15,
+            16
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12366,
+      "name": "南極冰洞二層",
+      "region": "分區 7",
+      "mapGroup": 7,
+      "modelId": 12366,
+      "eveMapNumber": 12366,
+      "mapExtent": {
+        "width": 11520,
+        "height": 11520
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12366-1",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 1,
+          "x": 6948,
+          "y": 2580,
+          "rawX": 3474,
+          "rawY": 645,
+          "eventIds": [
+            3,
+            5,
+            6
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12368,
+      "name": "雪島洞穴二層",
+      "region": "分區 9",
+      "mapGroup": 9,
+      "modelId": 12368,
+      "eveMapNumber": 12368,
+      "mapExtent": {
+        "width": 9720,
+        "height": 9720
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12368-11",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 11,
+          "x": 3432,
+          "y": 4640,
+          "rawX": 1716,
+          "rawY": 1160,
+          "eventIds": [
+            15,
+            16,
+            17
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12369,
+      "name": "雪島洞穴三層",
+      "region": "分區 9",
+      "mapGroup": 9,
+      "modelId": 12369,
+      "eveMapNumber": 12369,
+      "mapExtent": {
+        "width": 9720,
+        "height": 9720
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12369-10",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 10,
+          "x": 9038,
+          "y": 4320,
+          "rawX": 4519,
+          "rawY": 1080,
+          "eventIds": [
+            12,
+            13,
+            14
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12371,
+      "name": "雪島洞穴五層",
+      "region": "分區 9",
+      "mapGroup": 9,
+      "modelId": 12371,
+      "eveMapNumber": 12371,
+      "mapExtent": {
+        "width": 11520,
+        "height": 11520
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12371-15",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 15,
+          "x": 6126,
+          "y": 5492,
+          "rawX": 3063,
+          "rawY": 1373,
+          "eventIds": [
+            18,
+            19,
+            20
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12372,
+      "name": "雪島洞穴六層",
+      "region": "分區 9",
+      "mapGroup": 9,
+      "modelId": 12372,
+      "eveMapNumber": 12372,
+      "mapExtent": {
+        "width": 9720,
+        "height": 9720
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12372-11",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 11,
+          "x": 6268,
+          "y": 3252,
+          "rawX": 3134,
+          "rawY": 813,
+          "eventIds": [
+            14,
+            15,
+            16
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12373,
+      "name": "雪島洞穴七層",
+      "region": "分區 9",
+      "mapGroup": 9,
+      "modelId": 12373,
+      "eveMapNumber": 12373,
+      "mapExtent": {
+        "width": 9720,
+        "height": 9720
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12373-4",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 4,
+          "x": 4480,
+          "y": 940,
+          "rawX": 2240,
+          "rawY": 235,
+          "eventIds": [
+            6,
+            7,
+            8
+          ],
+          "leadEventIds": [
+            2
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12457,
+      "name": "朝鮮迷宮二層",
+      "region": "分區 29",
+      "mapGroup": 29,
+      "modelId": 12457,
+      "eveMapNumber": 12457,
+      "mapExtent": {
+        "width": 11520,
+        "height": 11520
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12457-10",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 10,
+          "x": 3070,
+          "y": 5404,
+          "rawX": 1535,
+          "rawY": 1351,
+          "eventIds": [
+            11,
+            12,
+            13
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12463,
+      "name": "瀑布水窟",
+      "region": "分區 29",
+      "mapGroup": 29,
+      "modelId": 12463,
+      "eveMapNumber": 12463,
+      "mapExtent": {
+        "width": 11520,
+        "height": 11520
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12463-10",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 10,
+          "x": 1840,
+          "y": 7172,
+          "rawX": 920,
+          "rawY": 1793,
+          "eventIds": [
+            10,
+            11,
+            12
+          ],
+          "leadEventIds": [
+            2
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12507,
+      "name": "金字塔密道四",
+      "region": "分區 34",
+      "mapGroup": 34,
+      "modelId": 12507,
+      "eveMapNumber": 12507,
+      "mapExtent": {
+        "width": 8640,
+        "height": 8640
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12507-8",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 8,
+          "x": 3372,
+          "y": 6708,
+          "rawX": 1686,
+          "rawY": 1677,
+          "eventIds": [
+            5,
+            11,
+            12
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12512,
+      "name": "草原深處",
+      "region": "分區 34",
+      "mapGroup": 34,
+      "modelId": 12512,
+      "eveMapNumber": 12512,
+      "mapExtent": {
+        "width": 11660,
+        "height": 12800
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 57,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12512-18",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 18,
+          "x": 5204,
+          "y": 6240,
+          "rawX": 2602,
+          "rawY": 1560,
+          "eventIds": [
+            15,
+            23,
+            24
+          ],
+          "leadEventIds": [
+            7
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12552,
+      "name": "海風之屋",
+      "region": "分區 24",
+      "mapGroup": 24,
+      "modelId": 12552,
+      "eveMapNumber": 12552,
+      "mapExtent": {
+        "width": 1664,
+        "height": 2560
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "chests": [
+        {
+          "id": "12552-1",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 1,
+          "x": 464,
+          "y": 1536,
+          "rawX": 232,
+          "rawY": 384,
+          "eventIds": [
+            2,
+            3,
+            4
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12602,
+      "name": "吳哥窟",
+      "region": "分區 19",
+      "mapGroup": 19,
+      "modelId": 12602,
+      "eveMapNumber": 12602,
+      "mapExtent": {
+        "width": 7804,
+        "height": 10402
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 137,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12602-5",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 5,
+          "x": 7332,
+          "y": 6764,
+          "rawX": 3666,
+          "rawY": 1691,
+          "eventIds": [
+            18,
+            19,
+            20
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12614,
+      "name": "暹邏密道一",
+      "region": "分區 19",
+      "mapGroup": 19,
+      "modelId": 12614,
+      "eveMapNumber": 12614,
+      "mapExtent": {
+        "width": 7200,
+        "height": 7200
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12614-5",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 5,
+          "x": 1054,
+          "y": 2668,
+          "rawX": 527,
+          "rawY": 667,
+          "eventIds": [
+            9,
+            10,
+            11
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12700,
+      "name": "非洲村落",
+      "region": "分區 32",
+      "mapGroup": 32,
+      "modelId": 12700,
+      "eveMapNumber": 12700,
+      "mapExtent": {
+        "width": 11652,
+        "height": 12800
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 57,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12700-13",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 13,
+          "x": 6072,
+          "y": 3884,
+          "rawX": 3036,
+          "rawY": 971,
+          "eventIds": [
+            18
+          ],
+          "leadEventIds": [
+            6
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12750,
+      "name": "空中花園",
+      "region": "分區 34",
+      "mapGroup": 34,
+      "modelId": 12750,
+      "eveMapNumber": 12750,
+      "mapExtent": {
+        "width": 7002,
+        "height": 11200
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 199,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12750-21",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 21,
+          "x": 1506,
+          "y": 732,
+          "rawX": 753,
+          "rawY": 183,
+          "eventIds": [
+            37
+          ],
+          "leadEventIds": [
+            7
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12800,
+      "name": "雅典城",
+      "region": "分區 36",
+      "mapGroup": 36,
+      "modelId": 12800,
+      "eveMapNumber": 12800,
+      "mapExtent": {
+        "width": 3800,
+        "height": 12686
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 389,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12800-44",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 44,
+          "x": 1952,
+          "y": 1808,
+          "rawX": 976,
+          "rawY": 452,
+          "eventIds": [
+            53
+          ],
+          "leadEventIds": [
+            19
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12862,
+      "name": "墟無禁地",
+      "region": "分區 26",
+      "mapGroup": 26,
+      "modelId": 12862,
+      "eveMapNumber": 12862,
+      "mapExtent": {
+        "width": 11520,
+        "height": 11520
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12862-12",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 12,
+          "x": 1780,
+          "y": 6192,
+          "rawX": 890,
+          "rawY": 1548,
+          "eventIds": [
+            14
+          ],
+          "leadEventIds": [
+            2
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12875,
+      "name": "千葉楓樹林一",
+      "region": "未分區",
+      "mapGroup": 0,
+      "modelId": 12875,
+      "eveMapNumber": 12875,
+      "mapExtent": {
+        "width": 11650,
+        "height": 12800
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 57,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12875-17",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 17,
+          "x": 6252,
+          "y": 3708,
+          "rawX": 3126,
+          "rawY": 927,
+          "eventIds": [
+            19
+          ],
+          "leadEventIds": [
+            5
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12900,
+      "name": "烏龜島",
+      "region": "未分區",
+      "mapGroup": 0,
+      "modelId": 12900,
+      "eveMapNumber": 12900,
+      "mapExtent": {
+        "width": 16000,
+        "height": 16400
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 23,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12900-7",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 7,
+          "x": 5108,
+          "y": 8988,
+          "rawX": 2554,
+          "rawY": 2247,
+          "eventIds": [
+            8
+          ],
+          "leadEventIds": [
+            2
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12902,
+      "name": "遺跡島",
+      "region": "未分區",
+      "mapGroup": 0,
+      "modelId": 12902,
+      "eveMapNumber": 12902,
+      "mapExtent": {
+        "width": 11652,
+        "height": 12800
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 58,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12902-4",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 4,
+          "x": 4748,
+          "y": 4320,
+          "rawX": 2374,
+          "rawY": 1080,
+          "eventIds": [
+            6
+          ],
+          "leadEventIds": [
+            3
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12950,
+      "name": "菲律賓",
+      "region": "分區 18",
+      "mapGroup": 18,
+      "modelId": 12950,
+      "eveMapNumber": 12950,
+      "mapExtent": {
+        "width": 10964,
+        "height": 17440
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 197,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "12950-24",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 24,
+          "x": 7626,
+          "y": 7304,
+          "rawX": 3813,
+          "rawY": 1826,
+          "eventIds": [
+            35
+          ],
+          "leadEventIds": [
+            4
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13024,
+      "name": "珠江口",
+      "region": "未分區",
+      "mapGroup": 0,
+      "modelId": 13024,
+      "eveMapNumber": 13024,
+      "mapExtent": {
+        "width": 11651,
+        "height": 12800
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 57,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "13024-19",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 19,
+          "x": 3046,
+          "y": 4948,
+          "rawX": 1523,
+          "rawY": 1237,
+          "eventIds": [
+            1
+          ],
+          "leadEventIds": [
+            7
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15002,
+      "name": "遺落空島",
+      "region": "未分區",
+      "mapGroup": 0,
+      "modelId": 15002,
+      "eveMapNumber": 15002,
+      "mapExtent": {
+        "width": 17984,
+        "height": 13000
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 150
+      },
+      "chests": [
+        {
+          "id": "15002-1",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 1,
+          "x": 16516,
+          "y": 8668,
+          "rawX": 8258,
+          "rawY": 2167,
+          "eventIds": [
+            1,
+            2,
+            3
+          ],
+          "leadEventIds": [
+            1
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15038,
+      "name": "深黯碑廊",
+      "region": "未分區",
+      "mapGroup": 0,
+      "modelId": 12162,
+      "eveMapNumber": 15038,
+      "mapExtent": {
+        "width": 11520,
+        "height": 11520
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "15038-8",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 8,
+          "x": 1178,
+          "y": 5348,
+          "rawX": 589,
+          "rawY": 1337,
+          "eventIds": [
+            11,
+            12,
+            13
+          ],
+          "leadEventIds": [
+            2
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30099,
+            30139
+          ],
+          "conditions": [
+            "事件含：金色寶箱鑰匙／金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15093,
+      "name": "巨鯨島",
+      "region": "分區 41",
+      "mapGroup": 41,
+      "modelId": 15093,
+      "eveMapNumber": 15093,
+      "mapExtent": {
+        "width": 22000,
+        "height": 20000
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 12,
+        "y": 57
+      },
+      "chests": [
+        {
+          "id": "15093-47",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 47,
+          "x": 3078,
+          "y": 4852,
+          "rawX": 1539,
+          "rawY": 1213,
+          "eventIds": [
+            66
+          ],
+          "leadEventIds": [
+            4
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15103,
+      "name": "希水族村莊",
+      "region": "分區 42",
+      "mapGroup": 42,
+      "modelId": 15103,
+      "eveMapNumber": 15103,
+      "mapExtent": {
+        "width": 6656,
+        "height": 10240
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 186,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "15103-9",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 9,
+          "x": 6200,
+          "y": 6176,
+          "rawX": 3100,
+          "rawY": 1544,
+          "eventIds": [
+            17
+          ],
+          "leadEventIds": [
+            3
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 60015,
+      "name": "印加",
+      "region": "分區 15",
+      "mapGroup": 15,
+      "modelId": 60015,
+      "eveMapNumber": 60015,
+      "mapExtent": {
+        "width": 9264,
+        "height": 24000
+      },
+      "ratio": {
+        "x": 2,
+        "y": 4
+      },
+      "smallMapOffset": {
+        "x": 318,
+        "y": 12
+      },
+      "chests": [
+        {
+          "id": "60015-39",
+          "npcId": 19117,
+          "name": "黃金寶箱",
+          "slot": 39,
+          "x": 1052,
+          "y": 9908,
+          "rawX": 526,
+          "rawY": 2477,
+          "eventIds": [
+            44
+          ],
+          "leadEventIds": [
+            3
+          ],
+          "hasInteraction": true,
+          "keyIds": [
+            30139
+          ],
+          "conditions": [
+            "事件含：金寶箱之鑰"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1034 @@
+{
+  "schema_version": 1,
+  "release_id": "1.3.19_d6bc1e25_e7df651c",
+  "maps": [
+    {
+      "id": 10070,
+      "name": "雷龍島",
+      "model_id": 10070,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/10070.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.078125,
+          "scale_y": 0.078125,
+          "offset_x": 56,
+          "offset_y": 12.0
+        },
+        "sha256": "947c2b5013d4c07a78763244cc0a22254802bf88e660a84420ed2955d7dbc537"
+      }
+    },
+    {
+      "id": 10071,
+      "name": "席貝兒的家",
+      "model_id": 10071,
+      "minimap": {
+        "type": "navigation",
+        "image": "assets/maps/10071.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.37398373983739835,
+          "scale_y": 0.37398373983739835,
+          "offset_x": 201.59349593495932,
+          "offset_y": 33.30081300813008
+        },
+        "sha256": "73578c4b582d829959454ec0ffa01239b5b2ab8a6645731378e9d36c6dfabd0d",
+        "note": "原圖未提供，以同版靜態導航區域繪製。"
+      }
+    },
+    {
+      "id": 10161,
+      "name": "澳洲山頂通道",
+      "model_id": 12357,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12357.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.08680555555555555,
+          "scale_y": 0.08680555555555555,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "35060898fb29a33d771bfda5ca569d0db889b2b5d45e7e1f0bb35b385331b014"
+      }
+    },
+    {
+      "id": 10162,
+      "name": "澳洲山頂通道",
+      "model_id": 11080,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/11080.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.12135922330097088,
+          "scale_y": 0.12135922330097088,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "aabe1cb65bc12a51987c9389ea107eadc4dc0c79b5ecb1e0297f784cfe64a372"
+      }
+    },
+    {
+      "id": 11037,
+      "name": "司徒華島迷宮二層",
+      "model_id": 11037,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/11037.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.08680555555555555,
+          "scale_y": 0.08680555555555555,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "0705efe38b0514e0c2851730a86218bef3a1d59c3c90838ac7d8852c390c11d4"
+      }
+    },
+    {
+      "id": 11069,
+      "name": "夏威夷山洞",
+      "model_id": 11069,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/11069.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.11574074074074074,
+          "scale_y": 0.11574074074074074,
+          "offset_x": 0,
+          "offset_y": 24.0
+        },
+        "sha256": "25b0adb5662e9191f504520ad8c189caefaefa527a872a96932bd0ba0c7ad97b"
+      }
+    },
+    {
+      "id": 11080,
+      "name": "恐龍巢穴深處",
+      "model_id": 11080,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/11080.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.12135922330097088,
+          "scale_y": 0.12135922330097088,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "aabe1cb65bc12a51987c9389ea107eadc4dc0c79b5ecb1e0297f784cfe64a372"
+      }
+    },
+    {
+      "id": 11087,
+      "name": "樹洞三層",
+      "model_id": 11087,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/11087.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.11574074074074074,
+          "scale_y": 0.11574074074074074,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "1f3793b6ff631efa649557f42cca7c98dcfbeebcc4b3b4a17d63be0f4d95710d"
+      }
+    },
+    {
+      "id": 11122,
+      "name": "幽靈船上層艙",
+      "model_id": 11122,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/11122.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.0992063492063492,
+          "scale_y": 0.0992063492063492,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "f35f4777539659b5a5452cbc3eddb8f2f7674a770614967cb8b882177f3558fc"
+      }
+    },
+    {
+      "id": 11125,
+      "name": "庫克船船艙一層",
+      "model_id": 11125,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/11125.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.0992063492063492,
+          "scale_y": 0.0992063492063492,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "5c5998fdb88491d2a164ba6476fe913a99ecae361b6d4546753d7cb16451b330"
+      }
+    },
+    {
+      "id": 11127,
+      "name": "馬達加斯加",
+      "model_id": 11127,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/11127.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.078125,
+          "scale_y": 0.078125,
+          "offset_x": 57,
+          "offset_y": 12.0
+        },
+        "sha256": "cc1a11d5c30e22f1122db2a252f323a08b0a25e51c50492e1537836bddec7f8c"
+      }
+    },
+    {
+      "id": 11132,
+      "name": "鄭和艦船艙下層",
+      "model_id": 11132,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/11132.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.1388888888888889,
+          "scale_y": 0.1388888888888889,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "d10324f69eda270f3db3d691210934c54fb7c3a781836f6b515b9603a3fd86b0"
+      }
+    },
+    {
+      "id": 11135,
+      "name": "半獸人島",
+      "model_id": 11135,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/11135.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.078125,
+          "scale_y": 0.078125,
+          "offset_x": 56,
+          "offset_y": 12.0
+        },
+        "sha256": "f5b8471ae54e2603323dc97956e522a560223806e4814358c5d4414a9ac6af80"
+      }
+    },
+    {
+      "id": 11145,
+      "name": "甲蟲島",
+      "model_id": 11145,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/11145.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.078125,
+          "scale_y": 0.078125,
+          "offset_x": 57,
+          "offset_y": 12.0
+        },
+        "sha256": "61f3d48584b0c9f43e6937e41d6d8d00bdd68d21f92fc134ab5e48694427f0a4"
+      }
+    },
+    {
+      "id": 11164,
+      "name": "火星",
+      "model_id": 11164,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/11164.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.15625,
+          "scale_y": 0.15625,
+          "offset_x": 261,
+          "offset_y": 12.0
+        },
+        "sha256": "f86de451895407158f4a2a0f05aced70196daa25f80db3ca347c8dabec078133"
+      }
+    },
+    {
+      "id": 11176,
+      "name": "沈船船艙一層",
+      "model_id": 11176,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/11176.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.1388888888888889,
+          "scale_y": 0.1388888888888889,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "50b7f740884bb4cd249230216b849b6e383c755813cb66fd47e9090d69b66017"
+      }
+    },
+    {
+      "id": 11182,
+      "name": "月殿通道",
+      "model_id": 11182,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/11182.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.390625,
+          "scale_y": 0.390625,
+          "offset_x": 186,
+          "offset_y": 12.0
+        },
+        "sha256": "e94b64cc2a30d671b7b0321b8251e5408947b161216e8989304ed55546164732"
+      }
+    },
+    {
+      "id": 12104,
+      "name": "中國森林",
+      "model_id": 12104,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12104.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.13542795232936078,
+          "scale_y": 0.13542795232936078,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "d1f51ae3436e116b7a386578b738f7bffa27de4c225ee71d02fffb11d9a991db"
+      }
+    },
+    {
+      "id": 12110,
+      "name": "長安",
+      "model_id": 12110,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12110.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.16666666666666666,
+          "scale_y": 0.16666666666666666,
+          "offset_x": 129,
+          "offset_y": 12.0
+        },
+        "sha256": "0fa1f896557085d9e1925aae0bef9d4c8d0000176554802f74bd596118e7b83e"
+      }
+    },
+    {
+      "id": 12126,
+      "name": "長城關道一",
+      "model_id": 12126,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12126.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.1538935056940597,
+          "scale_y": 0.1538935056940597,
+          "offset_x": 12,
+          "offset_y": 113.2160664819944
+        },
+        "sha256": "608409d3e0edda0e769b75a8236c24f4b66a54dbdfd980014c0df1006abfce0d"
+      }
+    },
+    {
+      "id": 12161,
+      "name": "瑪雅山洞地下",
+      "model_id": 12161,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12161.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.08680555555555555,
+          "scale_y": 0.08680555555555555,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "de182d1cb14f9c8cc12b4af54c42bffe5837901652043bf9e2e667420e7db52e"
+      }
+    },
+    {
+      "id": 12162,
+      "name": "瑪雅地窖二",
+      "model_id": 12162,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12162.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.08680555555555555,
+          "scale_y": 0.08680555555555555,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "9a848c01e4b6d6605bd95da0064c2c79e7e569fd488bb30280cd2a0e232e44e2"
+      }
+    },
+    {
+      "id": 12206,
+      "name": "火山迷宮一",
+      "model_id": 12206,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12206.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.11574074074074074,
+          "scale_y": 0.11574074074074074,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "f88ea8b1d6672023a9b93f806e358623669802fc1faed2a5ff7a447062544c80"
+      }
+    },
+    {
+      "id": 12267,
+      "name": "鳥居洞窟",
+      "model_id": 12267,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12267.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.102880658436214,
+          "scale_y": 0.102880658436214,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "ede40046ed756483b62cdc896ca9fd6aa0d7145d01b1b9c67341ca6f28d1f12b"
+      }
+    },
+    {
+      "id": 12274,
+      "name": "金閣寺一樓",
+      "model_id": 12274,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12274.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.08680555555555555,
+          "scale_y": 0.08680555555555555,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "140204b39a2d89402cd26410722a4b631ffc0cf26197170769ace36276bf22b6"
+      }
+    },
+    {
+      "id": 12276,
+      "name": "金閣寺三樓",
+      "model_id": 12276,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12276.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.11574074074074074,
+          "scale_y": 0.11574074074074074,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "c4d927c80c42c2a9656b3a31884dd1636cfa994ca9cee69fc26fc6fcca00bccb"
+      }
+    },
+    {
+      "id": 12279,
+      "name": "山怪洞窟前段",
+      "model_id": 12279,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12279.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.14619883040935672,
+          "scale_y": 0.14619883040935672,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "54a17bd015bedfbcdea4f8f6f41c2c219e96149bf92cf2774fccdf1520ad706f"
+      }
+    },
+    {
+      "id": 12283,
+      "name": "蝦夷山洞二層",
+      "model_id": 12283,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12283.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.11574074074074074,
+          "scale_y": 0.11574074074074074,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "35a556ceb0eafca99c7e63490ca6eec826db234a95b1229d7ace0f66c84755cd"
+      }
+    },
+    {
+      "id": 12287,
+      "name": "鬼島洞窟地下一層",
+      "model_id": 12287,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12287.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.0992063492063492,
+          "scale_y": 0.0992063492063492,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "722a67c5df0e263ca224e0ef50eb7130511df0c7fa85b9ab1007911c8a4689dc"
+      }
+    },
+    {
+      "id": 12357,
+      "name": "南極冰洞一層",
+      "model_id": 12357,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12357.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.08680555555555555,
+          "scale_y": 0.08680555555555555,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "35060898fb29a33d771bfda5ca569d0db889b2b5d45e7e1f0bb35b385331b014"
+      }
+    },
+    {
+      "id": 12366,
+      "name": "南極冰洞二層",
+      "model_id": 12366,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12366.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.08680555555555555,
+          "scale_y": 0.08680555555555555,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "bcb07e9a430786ad56c8cedec1089f3a0ba122b3ba60a301945ef5b4f290ef75"
+      }
+    },
+    {
+      "id": 12368,
+      "name": "雪島洞穴二層",
+      "model_id": 12368,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12368.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.102880658436214,
+          "scale_y": 0.102880658436214,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "50cf67729a13c871ce93ab12d9c6c24164258330990c7a704f814e9716f1a688"
+      }
+    },
+    {
+      "id": 12369,
+      "name": "雪島洞穴三層",
+      "model_id": 12369,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12369.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.102880658436214,
+          "scale_y": 0.102880658436214,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "1520aa461df6156d089ca4ed6d0e74015511adc95b38c196d711b479f2b009cf"
+      }
+    },
+    {
+      "id": 12371,
+      "name": "雪島洞穴五層",
+      "model_id": 12371,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12371.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.08680555555555555,
+          "scale_y": 0.08680555555555555,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "e993fae455cd63b4d8b8f3fb814539fc6341f378be18615a8b210b5d7c3b5e50"
+      }
+    },
+    {
+      "id": 12372,
+      "name": "雪島洞穴六層",
+      "model_id": 12372,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12372.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.102880658436214,
+          "scale_y": 0.102880658436214,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "18e43d5a821e04df6379dd94337bbfc6e27a9888b3ca0f3a003c36e1c0811e5c"
+      }
+    },
+    {
+      "id": 12373,
+      "name": "雪島洞穴七層",
+      "model_id": 12373,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12373.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.102880658436214,
+          "scale_y": 0.102880658436214,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "eaf037d06526a285b3599bf33e2a49695389f11a6fe988023890e86d911300a3"
+      }
+    },
+    {
+      "id": 12457,
+      "name": "朝鮮迷宮二層",
+      "model_id": 12457,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12457.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.08680555555555555,
+          "scale_y": 0.08680555555555555,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "82103bc7f061da0398f89fe3a11695c8ff3d5bc8371e360166a2fbe338321ba3"
+      }
+    },
+    {
+      "id": 12463,
+      "name": "瀑布水窟",
+      "model_id": 12463,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12463.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.08680555555555555,
+          "scale_y": 0.08680555555555555,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "9bbf5f9d9746fa55b28297ff339ff4c77b05de2a21532f5b0f873f1c1ca54202"
+      }
+    },
+    {
+      "id": 12507,
+      "name": "金字塔密道四",
+      "model_id": 12507,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12507.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.11574074074074074,
+          "scale_y": 0.11574074074074074,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "7d14ed7b5e9dd07b56fe37003a3c0f81d0addeee2b1b8250430e6d59b0dd15a5"
+      }
+    },
+    {
+      "id": 12512,
+      "name": "草原深處",
+      "model_id": 12512,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12512.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.078125,
+          "scale_y": 0.078125,
+          "offset_x": 57,
+          "offset_y": 12.0
+        },
+        "sha256": "4bc9519b70ab92238fdd466ab93d718fc77092d3e4033ddc9c7ac2954c90a9bc"
+      }
+    },
+    {
+      "id": 12552,
+      "name": "海風之屋",
+      "model_id": 12552,
+      "minimap": {
+        "type": "navigation",
+        "image": "assets/maps/12552.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.37551020408163266,
+          "scale_y": 0.37551020408163266,
+          "offset_x": 198.44897959183675,
+          "offset_y": 33.22448979591831
+        },
+        "sha256": "19acb0573e8f19064fd64231d85b483dc6035caf62c0fe38450cfb627e33c3bf",
+        "note": "原圖未提供，以同版靜態導航區域繪製。"
+      }
+    },
+    {
+      "id": 12602,
+      "name": "吳哥窟",
+      "model_id": 12602,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12602.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.09613535858488752,
+          "scale_y": 0.09613535858488752,
+          "offset_x": 137,
+          "offset_y": 12.0
+        },
+        "sha256": "3f664c3f4b1a73198bfdc2df91191e14afd77fe4f23fc914c73f03c00e4f0a93"
+      }
+    },
+    {
+      "id": 12614,
+      "name": "暹邏密道一",
+      "model_id": 12614,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12614.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.1388888888888889,
+          "scale_y": 0.1388888888888889,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "44f631d74b5a56ffff7a60985d3bee51d1c34a8ca3dec5832e5522427dd335df"
+      }
+    },
+    {
+      "id": 12700,
+      "name": "非洲村落",
+      "model_id": 12700,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12700.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.078125,
+          "scale_y": 0.078125,
+          "offset_x": 57,
+          "offset_y": 12.0
+        },
+        "sha256": "368bb0e3af13472c002b103367b3b7e976b18f2f87b33ab7d29dadcfe4095c08"
+      }
+    },
+    {
+      "id": 12750,
+      "name": "空中花園",
+      "model_id": 12750,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12750.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.08928571428571429,
+          "scale_y": 0.08928571428571429,
+          "offset_x": 199,
+          "offset_y": 12.0
+        },
+        "sha256": "a55885ac1535b0d740f309c650af1afcfe92a3af3e49fa90c9d807ef9714777e"
+      }
+    },
+    {
+      "id": 12800,
+      "name": "雅典城",
+      "model_id": 12800,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12800.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.07882705344474224,
+          "scale_y": 0.07882705344474224,
+          "offset_x": 389,
+          "offset_y": 12.0
+        },
+        "sha256": "8d8f4e196b96482bb36d1dfb7195219c433f74b873b5b33ba08116fa4b23a4cf"
+      }
+    },
+    {
+      "id": 12862,
+      "name": "墟無禁地",
+      "model_id": 12862,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12862.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.08680555555555555,
+          "scale_y": 0.08680555555555555,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "bcddcca0d9f83703c1880341364f621d402e060a342a1e06ad293105633d8814"
+      }
+    },
+    {
+      "id": 12875,
+      "name": "千葉楓樹林一",
+      "model_id": 12875,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12875.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.078125,
+          "scale_y": 0.078125,
+          "offset_x": 57,
+          "offset_y": 12.0
+        },
+        "sha256": "a830d1348875331ce9a0c0acc7a1f4e978051a4b2c99413bd79d496f8d82ff2c"
+      }
+    },
+    {
+      "id": 12900,
+      "name": "烏龜島",
+      "model_id": 12900,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12900.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.06097560975609756,
+          "scale_y": 0.06097560975609756,
+          "offset_x": 23,
+          "offset_y": 12.0
+        },
+        "sha256": "bb7c0970daf2df0f3f9f2914daa70ad91655eee31190b1c819bdb30c163163ee"
+      }
+    },
+    {
+      "id": 12902,
+      "name": "遺跡島",
+      "model_id": 12902,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12902.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.078125,
+          "scale_y": 0.078125,
+          "offset_x": 58,
+          "offset_y": 12.0
+        },
+        "sha256": "8135f19ffff69820e2bcc0facba708b9044d3acc05c7ed125050f4b60c880f3d"
+      }
+    },
+    {
+      "id": 12950,
+      "name": "菲律賓",
+      "model_id": 12950,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12950.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.05733944954128441,
+          "scale_y": 0.05733944954128441,
+          "offset_x": 197,
+          "offset_y": 12.0
+        },
+        "sha256": "61faf6ed9cd745b67561cb4bb66987db70e965457fcbe9d4ed5ba617616521a1"
+      }
+    },
+    {
+      "id": 13024,
+      "name": "珠江口",
+      "model_id": 13024,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/13024.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.078125,
+          "scale_y": 0.078125,
+          "offset_x": 57,
+          "offset_y": 12.0
+        },
+        "sha256": "ca8b8f82b956df857420911fdea0669d930d67ba287eb280757f7709820af29f"
+      }
+    },
+    {
+      "id": 15002,
+      "name": "遺落空島",
+      "model_id": 15002,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/15002.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.055604982206405695,
+          "scale_y": 0.055604982206405695,
+          "offset_x": 12,
+          "offset_y": 151.13523131672594
+        },
+        "sha256": "a4380336803368ebab82d10f9be6f3187e5a5c504f5dc51cd2d31794eef2decc"
+      }
+    },
+    {
+      "id": 15038,
+      "name": "深黯碑廊",
+      "model_id": 12162,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/12162.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.08680555555555555,
+          "scale_y": 0.08680555555555555,
+          "offset_x": 12,
+          "offset_y": 12.0
+        },
+        "sha256": "9a848c01e4b6d6605bd95da0064c2c79e7e569fd488bb30280cd2a0e232e44e2"
+      }
+    },
+    {
+      "id": 15093,
+      "name": "巨鯨島",
+      "model_id": 15093,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/15093.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.045454545454545456,
+          "scale_y": 0.045454545454545456,
+          "offset_x": 12,
+          "offset_y": 57.90909090909088
+        },
+        "sha256": "502ffb51e63fb5d549a97f7f6044402b9d6d82a97b796b5b24342499741ca637"
+      }
+    },
+    {
+      "id": 15103,
+      "name": "希水族村莊",
+      "model_id": 15103,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/15103.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.09765625,
+          "scale_y": 0.09765625,
+          "offset_x": 186,
+          "offset_y": 12.0
+        },
+        "sha256": "2ec92813af48aa5b606f221b6c25935a3f892476e4b7fa7a22bed5ce050ec69b"
+      }
+    },
+    {
+      "id": 60015,
+      "name": "印加",
+      "model_id": 60015,
+      "minimap": {
+        "type": "bitmap",
+        "image": "assets/maps/60015.png",
+        "width": 1024,
+        "height": 1024,
+        "projection": {
+          "scale_x": 0.041666666666666664,
+          "scale_y": 0.041666666666666664,
+          "offset_x": 318,
+          "offset_y": 12.0
+        },
+        "sha256": "8805905b172b4ef3340c2db34feea7292d139a6f326469a10c864ac27ae383dc"
+      }
+    }
+  ]
+}

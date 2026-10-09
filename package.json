@@ -1,0 +1,12 @@
+{
+  "name": "gold-chest-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check app.js && node scripts/validate.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
