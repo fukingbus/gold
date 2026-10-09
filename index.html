@@ -28,30 +28,21 @@
     <nav class="top-links" aria-label="相關圖鑑"><a href="https://fukingbus.github.io/star/">天啟小幫手 <span aria-hidden="true">↗</span></a><a href="https://fukingbus.github.io/zodiac/">聖殿秘笈 <span aria-hidden="true">↗</span></a></nav>
   </header>
   <div class="workspace">
-    <aside class="sidebar" aria-label="地圖篩選與索引">
+    <section class="world-panel" aria-label="世界地圖">
       <div class="sidebar-controls">
-        <div class="section-label">探索地圖 <span id="sidebar-count">—</span></div>
+        <div class="section-label">世界地圖</div>
         <label class="search-wrap"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><input id="search" type="search" placeholder="搜尋地圖、地區、編號" autocomplete="off" aria-label="搜尋地圖、地區或場景編號"><span class="search-key" aria-hidden="true">/</span></label>
-        <label class="region-field"><span>場景分區</span><select id="region" aria-label="場景分區"><option value="">全部分區</option></select></label>
-        <div class="index-heading"><span>地圖索引</span><span id="index-count">—</span></div>
+        <button class="world-reset" id="world-reset" hidden>全部地圖</button>
       </div>
-      <nav id="map-index" class="map-index" aria-label="跳至地圖"></nav>
-      <div class="sidebar-foot"><i class="status-dot"></i><span>遊戲資料座標圖鑑<br><small>點選地圖索引，快速定位</small></span></div>
-    </aside>
+      <div id="world-map" class="world-map" aria-label="世界地圖寶箱分布"><div class="loading-state"><span class="loading-ring"></span>讀取世界地圖…</div></div>
+    </section>
     <main class="main">
-      <div class="page-heading"><div><span class="eyebrow">GOLDEN CHEST ATLAS</span><h2>沿著地圖，找到每一只寶箱。</h2></div><a class="source-link" href="#source-notes">資料說明 <span aria-hidden="true">↗</span></a></div>
-      <section class="metrics" aria-label="收錄統計">
-        <div><span>金色寶箱</span><strong id="total-chests">—</strong><small>個已記錄位置</small></div>
-        <div><span>分布地圖</span><strong id="total-maps">—</strong><small>張場景地圖</small></div>
-        <div><span>遊戲小地圖</span><strong id="total-bitmaps">—</strong><small id="bitmap-caption">優先使用原始圖像</small></div>
-      </section>
-      <div class="list-toolbar"><div><h2>寶箱分布</h2><span id="results-count" role="status">正在讀取地圖…</span></div><span class="interaction-hint"><i class="marker-example"></i>點選標記查看座標 <span class="hint-divider">·</span> 拖曳平移</span></div>
+      <div class="list-toolbar"><div><h2 id="list-title">寶箱分布</h2><span id="results-count" role="status">讀取地圖…</span></div></div>
       <div id="map-list" class="map-list" tabindex="-1"><div class="loading-state"><span class="loading-ring"></span>正在展開金色寶箱地圖…</div></div>
-      <section id="source-notes" class="source-notes" aria-labelledby="source-title"><h2 id="source-title">關於這份圖鑑</h2><p id="source-note">位置取自遊戲場景資料，地圖優先採用遊戲原始小地圖。</p><p>點位表示客戶端收錄的位置；寶箱的實際顯示、開啟狀態與重生時間，以遊戲伺服器為準。</p><details><summary>地圖與操作說明</summary><p>小地圖保留原始座標投影；沒有可用圖像時，改用遊戲導航資料產生地圖。導航輪廓僅表示快取覆蓋範圍，不代表障礙物或即時可通行狀態。</p><p>使用 ＋／− 放大縮小，拖曳平移，按「重設」返回完整地圖。桌面可按住 Ctrl／⌘ 並滾動縮放；鍵盤聚焦地圖後，可用方向鍵移動、＋／− 縮放、Home 重設。點擊空白位置可查看該位置的換算座標。</p><p class="source-meta" id="source-meta"></p><a href="./data/chests.json" class="source-link">查看座標資料 ↗</a></details></section>
-      <footer class="site-footer"><p>美術素材、數據資料著作權所有 中華網龍股份有限公司。</p><p>Non-profit publication, provided for reference and educational purposes only.</p><p>This project is not affiliated with or endorsed by Chinesegamer(中華網龍股份有限公司). All game assets and data are copyright © Chinesegamer International Corp.</p></footer>
+      <footer class="site-footer">遊戲素材 © 中華網龍股份有限公司</footer>
     </main>
   </div>
-  <dialog id="map-dialog" aria-labelledby="dialog-title"><div class="dialog-heading"><div><span class="eyebrow">寶箱地圖</span><h2 id="dialog-title"></h2></div><button class="icon-button close-dialog" aria-label="關閉放大地圖">×</button></div><div id="dialog-content"></div></dialog>
+  <dialog id="map-dialog" aria-labelledby="dialog-title"><div class="dialog-heading"><h2 id="dialog-title"></h2><button class="icon-button close-dialog" aria-label="關閉放大地圖">×</button></div><div id="dialog-content"></div></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <noscript><p class="noscript">請啟用 JavaScript 以使用互動地圖。您也可以直接下載 <a href="./data/chests.json">寶箱座標資料</a>。</p></noscript>
 </body>

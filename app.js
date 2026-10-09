@@ -4,12 +4,13 @@ const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&
 const count = value => new Intl.NumberFormat('zh-TW').format(value);
 const finite = value => typeof value === 'number' && Number.isFinite(value);
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
-const state = { maps: [], filtered: [], query: '', region: '', selected: new Map(), controllers: new Map(), dialog: null };
+const state = { maps: [], filtered: [], world: null, query: '', region: '', selected: new Map(), controllers: new Map(), dialog: null, worldPoint: null };
 let cardObserver;
 let imageObserver;
 let toastTimer;
 let dialogTrigger;
 let controllerId = 0;
+let worldDrag;
 
 const copyIcon = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="8" height="9" rx="1"/><path d="M10 5V2H2v9h3"/></svg>';
 const rawCoordinate = chest => `X ${count(chest.x)} · Y ${count(chest.y)}`;
@@ -49,7 +50,7 @@ function selectedDetail(map) {
   const chest = getSelection(map);
   if (!chest) return '';
   const warnings = [chest.hasInteraction === false ? '未配置開箱事件' : null, chest.note, chest.interactionNote, chest.interaction_note].filter(value => typeof value === 'string' && value);
-  return `<p><span class="selected-coordinate">${escape(rawCoordinate(chest))}</span><br>NPC ${escape(chest.npcId)}${chest.slot != null ? ` · 場景序號 ${escape(chest.slot)}` : ''}${warnings.length ? `<br>${warnings.map(escape).join('；')}` : ''}</p><button class="copy-button" data-action="copy">${copyIcon}複製座標</button>`;
+  return `<p><span class="selected-coordinate">${escape(rawCoordinate(chest))}</span>${warnings.length ? `<br>${warnings.map(escape).join('；')}` : ''}</p><button class="copy-button" data-action="copy">${copyIcon}複製座標</button>`;
 }
 
 function locations(map) {
@@ -59,7 +60,7 @@ function locations(map) {
 
 function mapBody(map, expanded = false) {
   const imageKind = map.minimap.type === 'bitmap' ? '遊戲小地圖' : '導航資料地圖';
-  return `<div class="card-body"><div class="map-column"><div class="minimap-wrap"><span class="map-badge ${map.minimap.type === 'bitmap' ? '' : 'navigation'}">${imageKind}</span><div class="map-controls" role="group" aria-label="${escape(map.name)}地圖操作"><button data-action="out" aria-label="縮小地圖">−</button><button data-action="in" aria-label="放大地圖">＋</button><button data-action="reset">重設</button>${expanded ? '' : '<button data-action="expand" aria-label="開啟放大地圖">⛶</button>'}</div><svg class="minimap" xmlns="http://www.w3.org/2000/svg" tabindex="0" role="group" aria-label="${escape(map.name)}互動小地圖，${map.chests.length}個寶箱。方向鍵平移，加減鍵縮放，Home重設。"></svg></div><div class="map-bottom"><span class="map-readout"><i class="marker-example"></i><span>寶箱位置 · 點擊空白處查看座標</span></span><span class="zoom-level">100%</span></div></div>${locations(map)}</div>`;
+  return `<div class="card-body"><div class="map-column"><div class="minimap-wrap"><span class="map-badge ${map.minimap.type === 'bitmap' ? '' : 'navigation'}">${imageKind}</span><div class="map-controls" role="group" aria-label="${escape(map.name)}地圖操作"><button data-action="out" aria-label="縮小地圖">−</button><button data-action="in" aria-label="放大地圖">＋</button><button data-action="reset">重設</button>${expanded ? '' : '<button data-action="expand" aria-label="開啟放大地圖">⛶</button>'}</div><svg class="minimap" xmlns="http://www.w3.org/2000/svg" tabindex="0" role="group" aria-label="${escape(map.name)}互動小地圖，${map.chests.length}個寶箱。方向鍵平移，加減鍵縮放，Home重設。"></svg></div><div class="map-bottom"><span class="map-readout"><i class="marker-example"></i><span>寶箱位置</span></span><span class="zoom-level">100%</span></div></div>${locations(map)}</div>`;
 }
 
 function mapCard(map, index) {
@@ -67,12 +68,78 @@ function mapCard(map, index) {
 }
 
 function setActiveMap(id) {
-  $$('.index-map').forEach(button => {
-    const active = Number(button.dataset.map) === Number(id);
+  $$('.world-point').forEach(button => {
+    const point = state.world.points.find(point => String(point.id) === button.dataset.point);
+    const active = point?.mapIds.includes(Number(id));
     button.classList.toggle('active', active);
     if (active) button.setAttribute('aria-current', 'location');
     else button.removeAttribute('aria-current');
   });
+}
+
+function matchesQuery(map) {
+  const query = state.query.trim().toLocaleLowerCase();
+  return !query || `${map.name} ${map.region} ${map.id} ${map.chests.map(chest => `${chest.name} ${chest.x} ${chest.y}`).join(' ')}`.toLocaleLowerCase().includes(query);
+}
+
+function pointMaps(point) {
+  return state.maps.filter(map => point.mapIds.includes(map.id) && matchesQuery(map));
+}
+
+function findWorldPoint(id) {
+  if (id === 'unmapped' && state.world?.unmappedMapIds?.length) return { id, name: '其他地圖', mapIds: state.world.unmappedMapIds };
+  return state.world?.points.find(point => String(point.id) === String(id));
+}
+
+function worldSurface(expanded = false) {
+  const { image, width, height, points } = state.world;
+  return `<div class="world-surface${expanded ? ' expanded' : ''}"><div class="world-tools" role="group" aria-label="世界地圖操作"><button data-world-action="out" aria-label="縮小世界地圖" disabled>−</button><button data-world-action="in" aria-label="放大世界地圖">＋</button><button data-world-action="reset">重設</button>${expanded ? '' : '<button data-world-action="expand" aria-label="開啟完整世界地圖">⛶</button>'}</div><div class="world-viewport" style="aspect-ratio:${width}/${height}" tabindex="0" aria-label="世界地圖，可放大後捲動"><div class="world-canvas" style="aspect-ratio:${width}/${height}"><img class="world-bitmap" src="${escape(image)}" width="${width}" height="${height}" alt="飄流幻境世界地圖" draggable="false">${points.map(point => {
+    const maps = pointMaps(point);
+    const chests = maps.reduce((sum, map) => sum + map.chests.length, 0);
+    return `<button class="world-point${state.region === String(point.id) ? ' active' : ''}" style="left:${point.x / width * 100}%;top:${point.y / height * 100}%" data-point="${escape(point.id)}" aria-label="${escape(point.name)}，${chests} 個寶箱，${maps.length} 張子地圖" aria-haspopup="dialog" ${chests ? '' : 'disabled'}><span class="world-counter">${chests}</span><span class="world-point-name">${escape(point.name)}</span></button>`;
+  }).join('')}</div></div></div>`;
+}
+
+function renderWorld() {
+  if (!state.world) return;
+  const unmapped = findWorldPoint('unmapped');
+  const remaining = unmapped ? pointMaps(unmapped) : [];
+  $('#world-map').innerHTML = worldSurface() + (remaining.length ? `<div class="world-other"><button data-point="unmapped" aria-haspopup="dialog">其他地圖 <b>${remaining.reduce((sum, map) => sum + map.chests.length, 0)}</b></button></div>` : '');
+  $('#world-reset').hidden = !state.region && !state.query;
+}
+
+function worldAction(event) {
+  const button = event.target.closest('[data-world-action]');
+  if (!button) return;
+  if (button.dataset.worldAction === 'expand') {
+    const dialog = $('#map-dialog');
+    state.dialog?.dispose();
+    state.dialog = null;
+    state.worldPoint = null;
+    dialogTrigger = button;
+    dialog.classList.add('world-dialog');
+    $('#dialog-title').textContent = '世界地圖';
+    $('#dialog-content').innerHTML = worldSurface(true);
+    dialog.showModal();
+    document.body.style.overflow = 'hidden';
+    $('.close-dialog').focus();
+    return;
+  }
+  const surface = button.closest('.world-surface');
+  if (!surface) return;
+  const viewport = $('.world-viewport', surface);
+  const canvas = $('.world-canvas', surface);
+  const oldZoom = Number(surface.dataset.zoom || 1);
+  const zoom = button.dataset.worldAction === 'reset' ? 1 : Math.max(1, Math.min(4, oldZoom * (button.dataset.worldAction === 'in' ? 1.5 : 1 / 1.5)));
+  const centerX = (viewport.scrollLeft + viewport.clientWidth / 2) / oldZoom;
+  const centerY = (viewport.scrollTop + viewport.clientHeight / 2) / oldZoom;
+  surface.dataset.zoom = zoom;
+  surface.classList.toggle('zoomed', zoom > 1);
+  canvas.style.width = `${zoom * 100}%`;
+  viewport.scrollLeft = centerX * zoom - viewport.clientWidth / 2;
+  viewport.scrollTop = centerY * zoom - viewport.clientHeight / 2;
+  $('[data-world-action="out"]', surface).disabled = zoom <= 1;
+  $('[data-world-action="in"]', surface).disabled = zoom >= 4;
 }
 
 function renderResults() {
@@ -80,12 +147,12 @@ function renderResults() {
   imageObserver?.disconnect();
   for (const controller of state.controllers.values()) controller.dispose();
   state.controllers.clear();
-  const query = state.query.trim().toLocaleLowerCase();
-  state.filtered = state.maps.filter(map => (!state.region || map.region === state.region) && (!query || `${map.name} ${map.region} ${map.id} ${map.chests.map(chest => `${chest.name} ${chest.x} ${chest.y}`).join(' ')}`.toLocaleLowerCase().includes(query)));
+  const point = findWorldPoint(state.region);
+  state.filtered = state.maps.filter(map => (!point || point.mapIds.includes(map.id)) && matchesQuery(map));
   const chests = state.filtered.reduce((sum, map) => sum + map.chests.length, 0);
   $('#results-count').textContent = `${count(state.filtered.length)} 張地圖 · ${count(chests)} 個寶箱`;
-  $('#index-count').textContent = `${state.filtered.length} / ${state.maps.length}`;
-  $('#map-index').innerHTML = state.filtered.map(map => `<button class="index-map" data-map="${map.id}" aria-label="${escape(map.name)}，場景 ${map.id}，${map.chests.length} 個寶箱"><span>${escape(map.name)}<small>${escape(map.region || '其他地區')} · ${map.id}</small></span><span class="index-count">${map.chests.length}</span></button>`).join('');
+  $('#list-title').textContent = point?.name || '寶箱分布';
+  renderWorld();
   $('#map-list').innerHTML = state.filtered.length ? state.filtered.map(mapCard).join('') : '<div class="empty-state"><h3>沒有符合的地圖</h3><p>試試其他地圖名稱、地區或場景編號。</p><button class="clear-button" data-action="clear">清除篩選</button></div>';
   imageObserver = new IntersectionObserver(entries => entries.forEach(entry => {
     if (!entry.isIntersecting) return;
@@ -124,7 +191,6 @@ function scrollToMap(id, updateHash = true) {
     state.query = '';
     state.region = '';
     $('#search').value = '';
-    $('#region').value = '';
     renderResults();
   }
   const target = document.getElementById(`map-${targetMap.id}`);
@@ -137,12 +203,48 @@ function scrollToMap(id, updateHash = true) {
 function openMap(map, trigger) {
   dialogTrigger = trigger;
   const dialog = $('#map-dialog');
+  state.worldPoint = null;
+  dialog.classList.remove('world-dialog');
   $('#dialog-title').textContent = `${map.name} · ${map.id}`;
   $('#dialog-content').innerHTML = mapBody(map, true);
   state.dialog?.dispose();
   dialog.showModal();
   state.dialog = new Minimap($('#dialog-content'), map);
   state.dialog.load();
+  document.body.style.overflow = 'hidden';
+  $('.close-dialog').focus();
+}
+
+function showRegionMap(mapId) {
+  const point = state.worldPoint;
+  const map = state.maps.find(map => map.id === Number(mapId));
+  if (!point || !map || !point.mapIds.includes(map.id)) return;
+  state.dialog?.dispose();
+  $('#region-map-title').textContent = `${map.name} · ${map.id}`;
+  $('#region-minimap').innerHTML = mapBody(map, true);
+  $$('.submap-tab').forEach(button => button.setAttribute('aria-pressed', String(Number(button.dataset.submap) === map.id)));
+  state.dialog = new Minimap($('#region-minimap'), map);
+  state.dialog.load();
+}
+
+function openWorldPoint(point, trigger) {
+  const maps = pointMaps(point);
+  if (!maps.length) return;
+  const { image, width, height } = state.world;
+  const cropWidth = Math.min(width, Math.max(width * .28, 220));
+  const cropHeight = Math.min(height, cropWidth * .68);
+  const cropX = Math.max(0, Math.min(width - cropWidth, point.x - cropWidth / 2));
+  const cropY = Math.max(0, Math.min(height - cropHeight, point.y - cropHeight / 2));
+  state.region = String(point.id);
+  renderResults();
+  dialogTrigger = $(`#world-map [data-point="${CSS.escape(String(point.id))}"]`) || trigger;
+  state.worldPoint = point;
+  const dialog = $('#map-dialog');
+  dialog.classList.add('world-dialog');
+  $('#dialog-title').textContent = point.name;
+  $('#dialog-content').innerHTML = `<div class="region-overview${point.id === 'unmapped' ? ' no-crop' : ''}">${point.id === 'unmapped' ? '' : `<div class="region-crop"><svg viewBox="${cropX} ${cropY} ${cropWidth} ${cropHeight}" role="img" aria-label="${escape(point.name)}世界地圖放大位置"><image href="${escape(image)}" width="${width}" height="${height}" preserveAspectRatio="none"/><circle cx="${point.x}" cy="${point.y}" r="${cropWidth * .022}" class="region-position"/></svg><span class="region-total">${maps.reduce((sum, map) => sum + map.chests.length, 0)} 個寶箱</span></div>`}<nav class="submap-list" aria-label="${escape(point.name)}子地圖">${maps.map(map => `<button class="submap-tab" data-submap="${map.id}" aria-pressed="false"><span>${escape(map.name)}<small>${map.id}</small></span><b>${map.chests.length}</b></button>`).join('')}</nav></div><div class="region-map-heading"><h3 id="region-map-title"></h3><button class="view-in-list" data-world-action="list">前往清單 ↗</button></div><div id="region-minimap"></div>`;
+  dialog.showModal();
+  showRegionMap(maps[0].id);
   document.body.style.overflow = 'hidden';
   $('.close-dialog').focus();
 }
@@ -278,7 +380,7 @@ class Minimap {
     this.view = { ...this.base };
     this.crosshair = null;
     $('.map-crosshair', this.svg).replaceChildren();
-    $('.map-readout', this.root).innerHTML = '<i class="marker-example"></i><span>寶箱位置 · 點擊空白處查看座標</span>';
+    $('.map-readout', this.root).innerHTML = '<i class="marker-example"></i><span>寶箱位置</span>';
     this.update();
   }
 
@@ -391,27 +493,44 @@ function validateAndJoin(roster, atlas) {
   });
 }
 
+function validateWorld(world) {
+  if (!world || !finite(world.width) || !finite(world.height) || world.width <= 0 || world.height <= 0 || !Array.isArray(world.points)) throw new Error('世界地圖資料格式錯誤');
+  if (typeof world.image !== 'string' || !/^assets\/world\/[\w.-]+\.(png|webp)$/i.test(world.image)) throw new Error('世界地圖圖像路徑無效');
+  const assigned = new Set();
+  const known = new Set(state.maps.map(map => map.id));
+  const pointIds = new Set();
+  for (const point of world.points) {
+    if (pointIds.has(String(point.id)) || !Array.isArray(point.mapIds) || !point.mapIds.length || !finite(point.x) || !finite(point.y) || point.x < 0 || point.y < 0 || point.x > world.width || point.y > world.height) throw new Error('世界地圖點位無效');
+    pointIds.add(String(point.id));
+    for (const id of point.mapIds) {
+      if (!known.has(id) || assigned.has(id)) throw new Error(`世界地圖的場景 ${id} 對應無效`);
+      assigned.add(id);
+    }
+    const chestCount = state.maps.filter(map => point.mapIds.includes(map.id)).reduce((sum, map) => sum + map.chests.length, 0);
+    if (chestCount !== point.chestCount) throw new Error(`世界地圖的 ${point.name} 寶箱數量不符`);
+  }
+  for (const id of world.unmappedMapIds || []) {
+    if (!known.has(id) || assigned.has(id)) throw new Error(`其他地圖的場景 ${id} 對應無效`);
+    assigned.add(id);
+  }
+  if (assigned.size !== state.maps.length) throw new Error('世界地圖尚未涵蓋所有寶箱場景');
+  return world;
+}
+
 async function start() {
   try {
-    const [roster, atlas] = await Promise.all(['./data/chests.json', './data/maps.json'].map(async path => {
+    const [roster, atlas, world] = await Promise.all(['./data/chests.json', './data/maps.json', './data/world.json'].map(async path => {
       const response = await fetch(path);
       if (!response.ok) throw new Error(`無法讀取 ${path}（${response.status}）`);
       return response.json();
     }));
     state.maps = validateAndJoin(roster, atlas);
-    const total = state.maps.reduce((sum, map) => sum + map.chests.length, 0);
-    const bitmapCount = state.maps.filter(map => map.minimap.type === 'bitmap').length;
-    const navCount = state.maps.length - bitmapCount;
-    $('#total-chests').textContent = count(total);
-    $('#total-maps').textContent = count(state.maps.length);
-    $('#total-bitmaps').textContent = count(bitmapCount);
-    $('#bitmap-caption').textContent = navCount ? `另 ${navCount} 張導航資料地圖` : '全數使用原始圖像';
-    $('#sidebar-count').textContent = `${state.maps.length} MAPS`;
+    state.world = validateWorld(world);
+    for (const point of state.world.points) {
+      for (const map of state.maps.filter(map => point.mapIds.includes(map.id))) map.region = point.name;
+    }
+    for (const map of state.maps.filter(map => state.world.unmappedMapIds?.includes(map.id))) map.region = '其他地圖';
     $('#version').textContent = roster.clientVersion || roster.version || (roster.releaseId || '').split('_')[0] || 'WLRE';
-    $('#source-note').textContent = `${typeof roster.sourceNote === 'string' ? roster.sourceNote : '遊戲名稱：黃金寶箱。位置取自遊戲場景資料，地圖優先採用遊戲原始小地圖。'} NPC 19117。`;
-    $('#source-meta').textContent = `資料版本 ${roster.releaseId || roster.release_id || '—'}${roster.coverage?.eveScenes ? ` · 已檢索 ${count(roster.coverage.eveScenes)} 個場景` : ''}`;
-    const regions = [...new Set(state.maps.map(map => map.region))].sort((a, b) => a.localeCompare(b, 'zh-Hant', { numeric: true }));
-    $('#region').innerHTML = '<option value="">全部分區</option>' + regions.map(region => `<option value="${escape(region)}">${escape(region)} · ${state.maps.filter(map => map.region === region).length}</option>`).join('');
     renderResults();
     const initialMap = location.hash.match(/^#map-(\d+)$/)?.[1];
     if (initialMap) requestAnimationFrame(() => scrollToMap(initialMap, false));
@@ -424,25 +543,61 @@ async function start() {
 
 $('#search').addEventListener('input', event => {
   state.query = event.target.value;
+  state.region = '';
   renderResults();
-  window.scrollTo({ top: 0, behavior: 'instant' });
 });
-$('#region').addEventListener('change', event => {
-  state.region = event.target.value;
+$('#world-reset').addEventListener('click', () => {
+  state.query = '';
+  state.region = '';
+  $('#search').value = '';
   renderResults();
-  window.scrollTo({ top: 0, behavior: 'instant' });
 });
-$('#map-index').addEventListener('click', event => {
-  const button = event.target.closest('[data-map]');
-  if (button) scrollToMap(button.dataset.map);
+$('#world-map').addEventListener('click', event => {
+  const button = event.target.closest('[data-point]');
+  const point = findWorldPoint(button?.dataset.point);
+  if (point) openWorldPoint(point, button);
+  worldAction(event);
 });
+$('#dialog-content').addEventListener('click', event => {
+  const button = event.target.closest('[data-point]');
+  const point = findWorldPoint(button?.dataset.point);
+  if (point) { openWorldPoint(point, button); return; }
+  worldAction(event);
+  const submap = event.target.closest('[data-submap]');
+  if (submap) showRegionMap(submap.dataset.submap);
+  if (event.target.closest('[data-world-action="list"]')) {
+    const id = state.dialog?.map.id;
+    closeMap();
+    if (id) requestAnimationFrame(() => scrollToMap(id));
+  }
+});
+for (const root of [$('#world-map'), $('#dialog-content')]) {
+  root.addEventListener('pointerdown', event => {
+    const viewport = event.target.closest('.world-viewport');
+    if (!viewport || event.pointerType !== 'mouse' || event.button !== 0 || event.target.closest('button') || Number(viewport.parentElement.dataset.zoom || 1) <= 1) return;
+    worldDrag = { viewport, id: event.pointerId, x: event.clientX, y: event.clientY, left: viewport.scrollLeft, top: viewport.scrollTop };
+    viewport.setPointerCapture(event.pointerId);
+    viewport.classList.add('dragging');
+  });
+  root.addEventListener('pointermove', event => {
+    if (!worldDrag || worldDrag.id !== event.pointerId) return;
+    worldDrag.viewport.scrollLeft = worldDrag.left - (event.clientX - worldDrag.x);
+    worldDrag.viewport.scrollTop = worldDrag.top - (event.clientY - worldDrag.y);
+  });
+  const endWorldDrag = () => {
+    worldDrag?.viewport.classList.remove('dragging');
+    worldDrag = null;
+  };
+  root.addEventListener('pointerup', endWorldDrag);
+  root.addEventListener('pointercancel', endWorldDrag);
+  root.addEventListener('lostpointercapture', endWorldDrag);
+}
 $('#map-list').addEventListener('click', event => {
   const action = event.target.closest('[data-action]')?.dataset.action;
   if (action === 'clear') {
     state.query = '';
     state.region = '';
     $('#search').value = '';
-    $('#region').value = '';
     renderResults();
     $('#search').focus();
   } else if (action === 'reload') location.reload();
@@ -456,6 +611,7 @@ $('#map-dialog').addEventListener('click', event => {
 $('#map-dialog').addEventListener('close', () => {
   state.dialog?.dispose();
   state.dialog = null;
+  state.worldPoint = null;
   document.body.style.overflow = '';
   dialogTrigger?.focus({ preventScroll: true });
 });

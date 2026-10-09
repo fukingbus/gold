@@ -1,0 +1,3437 @@
+{
+  "schema_version": 1,
+  "release_id": "1.3.19_d6bc1e25_e7df651c",
+  "bindings": {
+    "registry_sha256": "c1c39b8df163d50e9ae76f07e3a03f83a74b6371919c58aea711b42f151bdb10",
+    "packed_manifest_sha256": "6b6f11eac23a5ee6ac5b4d13d7819c9b35512dd118f6ee51e33550021f68e0bc",
+    "chest_roster_sha256": "b13134aca339ef38f2ab611c56a6ba4666c20e8a8ffa415f0ad7fde27ee2ca99",
+    "world_assets_sha256": "34c78f35fefc2d74ef5903ff8a2bf5c7ed5935640389c8db65668e93d98c9eac"
+  },
+  "sources": {
+    "TextData_C": {
+      "bytes": 1545624,
+      "sha256": "e8f3d6b97c526ec96954b811c6b13e11de3c5067770a585538c15207552cd3f5"
+    },
+    "ScenesData_C": {
+      "bytes": 101540,
+      "sha256": "9cd8988cdd693721ba73c983973fbdd3110d58e5680a5a8ac0480b26a925009b"
+    },
+    "WorldMapData_C": {
+      "bytes": 1726,
+      "sha256": "0ae023d691bd5aaaff04bc0f9a80818158d3925c3fce7a2b72c2f93662266b07"
+    },
+    "EveDoorLinks": {
+      "bytes": 291120,
+      "sha256": "6e045b9e9c4274a000d50adaf9fd3ff61b77968c799b3c7886c2af06b778a2d7"
+    },
+    "DoorLinkData_C": {
+      "bytes": 1012,
+      "sha256": "7172eff0520e8ffed780fddb145a56406b667ac7f28408f8c2fad32fb8755100"
+    }
+  },
+  "world_map_table": {
+    "record_count": 42,
+    "record_size": 41,
+    "header_size": 4,
+    "raw_hex": "2a000000010069f100006df100000001000000b01d7922be850000c74660ea540bef0b050060eaea0b4a0b040002006af1000070f1000000010000005c1c4425bf850000c94662ea2e0bdf11190062ea6a09ea10050003008085000071f100000001000000941bd426c0850000cb46a23a5508df012d00a23a6f0765050f000400c0ee000072f100000001000000771aa021c1850000cd4666ea3c144312410066ea1e15511310000500d6ed000073f1000001010000005221b01d00000000cf46fa32480a4005000000000000000001000600a6ea000074f1000000010000000019281958a10000d1465627840def0600000000000000001200070061ec000075f1000000010000008818ac2bc2850000d34643308606b202550043308606b202110008008185000076f1000000010000007c10502860a10000d546902bb9014b010000000000000000480009008285000077f100000001000000de08532a5aa10000d7464f30a2024805000000000000000012000a008385000078f100000001000000a816b815ca850000d946552730071b08000000000000000012000b0057eb000079f100000001000000740e2418ca850000db467f2b6c07d705000000000000000012000c0061eb00007af10000000100000040105c1261a10000dd46892b220d0307000000000000000012000d0050ec00007bf100000001000000a712ec0ec9850000df460c30ab07660669000c304a060e0612000e00beee00007cf1000000010000002c29ea24c3850000e14664ea7616a30700000000000000000f000f00c9ee00007df100000001000000882c141e62a10000e3466feac80f6301000000000000000047001000bfee00007ef100000001000000f62c5017c4850000e54665ea5104560500000000000000001000110062ec00007ff100000001000000c42ce029c5850000e74644302c06e704000000000000000010001200a9ed000080f100000001000000381da41063a10000e9469632d9085b09000000000000000012001300d1ec000081f100000001000000bc16cc1057a10000eb46393156019f017d003931b501f40039001400c6ee000082f100000001000000a81bf80caaf10000ed466cea1d0b0c0300000000000000000f001500c5eb000083f1000000010000009c18880e5fa10000ef46492fd00713060000000000000000390016008485000084f100000001000000171b950bc6850000f146442f0807140500000000000000000f001700caeb000085f1000000010000001f18540b64a10000f3464e2f7c06f6040000000000000000480018008585000086f10000000100000004248c0fc7850000f54668ead6063c0f00000000000000000f0019008685000087f100000001000000ec22740eca850000f74669eaa205230500000000000000000f001a008785000088f100000001000000241d740966a10000f9463232c0089f06000000000000000047001b00c5ee000089f100000001000000f01ef208c8850000fb466bea1914630191006bea1a13fa0010001c003dec00008af1000000010000008020b4055ba10000fd46f92f54019f0100000000000000003a001d00c7ee00008bf100000001000000f41a84085ca10000ff466deae50b731400000000000000003a001e00888500008cf100000001000000502324045ea100000147fe2f6c0c6b0300000000000000003a001f004feb00008df1000000010000004407e81759a100000347772be00b54010000000000000000120020001fed00008ef1000000010000000005b41467a1000005479c31c4093e08000000000000000048002100deed00008ff100000101000000b80bea0b0000000007472c33a2034e0700000000000000000100220099ec000090f100000001000000d8041c0c5da100000947d430220c1907a500d430620c36064700230093ed000091f100000102000000630d9d0a000000000b476932780a0e010000000000000000010024008985000092f100000002000000f10b0d0a69a100000d4700323c0557080000000000000000550025001eee000093f1000001020000004b0ac208000000000f479033de080a0500000000000000000100260053ee000094f1000001020000009f08a007000000001147cd336c07eb0000000000000000000100270007ee000095f100000102000000c307c3040000000013476c33e5068601000000000000000001002800c1ee000096f1000001010000005613fa1900000000154767ea1004370500000000000000000100290031ef0000e3f100000001000000a8254c1d68a100002d47f53a530b320cb900f53ac10c660b48002a0097f800000000000001010000000000000000000000000000000000000000000000000000000000",
+    "records": [
+      {
+        "world_map_id": 1,
+        "map_name_text_id": 61801,
+        "scene_desc_text_id": 61805,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 7600,
+        "show_y": 8825,
+        "explore_level_text_id": 34238,
+        "mark_id": 18119,
+        "portal_scene_id": 60000,
+        "portal_x": 2900,
+        "portal_y": 3055,
+        "dummy_level": 5,
+        "dummy_area_name_text_id": 60000,
+        "dummy_x": 3050,
+        "dummy_y": 2890,
+        "ui_sell_id": 4,
+        "name": "北島",
+        "record_offset": 4,
+        "record_size": 41,
+        "record_hex": "010069f100006df100000001000000b01d7922be850000c74660ea540bef0b050060eaea0b4a0b0400"
+      },
+      {
+        "world_map_id": 2,
+        "map_name_text_id": 61802,
+        "scene_desc_text_id": 61808,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 7260,
+        "show_y": 9540,
+        "explore_level_text_id": 34239,
+        "mark_id": 18121,
+        "portal_scene_id": 60002,
+        "portal_x": 2862,
+        "portal_y": 4575,
+        "dummy_level": 25,
+        "dummy_area_name_text_id": 60002,
+        "dummy_x": 2410,
+        "dummy_y": 4330,
+        "ui_sell_id": 5,
+        "name": "南島",
+        "record_offset": 45,
+        "record_size": 41,
+        "record_hex": "02006af1000070f1000000010000005c1c4425bf850000c94662ea2e0bdf11190062ea6a09ea100500"
+      },
+      {
+        "world_map_id": 3,
+        "map_name_text_id": 34176,
+        "scene_desc_text_id": 61809,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 7060,
+        "show_y": 9940,
+        "explore_level_text_id": 34240,
+        "mark_id": 18123,
+        "portal_scene_id": 15010,
+        "portal_x": 2133,
+        "portal_y": 479,
+        "dummy_level": 45,
+        "dummy_area_name_text_id": 15010,
+        "dummy_x": 1903,
+        "dummy_y": 1381,
+        "ui_sell_id": 15,
+        "name": "司徒華島",
+        "record_offset": 86,
+        "record_size": 41,
+        "record_hex": "03008085000071f100000001000000941bd426c0850000cb46a23a5508df012d00a23a6f0765050f00"
+      },
+      {
+        "world_map_id": 4,
+        "map_name_text_id": 61120,
+        "scene_desc_text_id": 61810,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 6775,
+        "show_y": 8608,
+        "explore_level_text_id": 34241,
+        "mark_id": 18125,
+        "portal_scene_id": 60006,
+        "portal_x": 5180,
+        "portal_y": 4675,
+        "dummy_level": 65,
+        "dummy_area_name_text_id": 60006,
+        "dummy_x": 5406,
+        "dummy_y": 4945,
+        "ui_sell_id": 16,
+        "name": "澳斯利亞",
+        "record_offset": 127,
+        "record_size": 41,
+        "record_hex": "0400c0ee000072f100000001000000771aa021c1850000cd4666ea3c144312410066ea1e1551131000"
+      },
+      {
+        "world_map_id": 5,
+        "map_name_text_id": 60886,
+        "scene_desc_text_id": 61811,
+        "open_setting": 1,
+        "area": 1,
+        "show_x": 8530,
+        "show_y": 7600,
+        "explore_level_text_id": 0,
+        "mark_id": 18127,
+        "portal_scene_id": 13050,
+        "portal_x": 2632,
+        "portal_y": 1344,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 1,
+        "name": "練功中央島",
+        "record_offset": 168,
+        "record_size": 41,
+        "record_hex": "0500d6ed000073f1000001010000005221b01d00000000cf46fa32480a400500000000000000000100"
+      },
+      {
+        "world_map_id": 6,
+        "map_name_text_id": 60070,
+        "scene_desc_text_id": 61812,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 6400,
+        "show_y": 6440,
+        "explore_level_text_id": 41304,
+        "mark_id": 18129,
+        "portal_scene_id": 10070,
+        "portal_x": 3460,
+        "portal_y": 1775,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 18,
+        "name": "雷龍島",
+        "record_offset": 209,
+        "record_size": 41,
+        "record_hex": "0600a6ea000074f1000000010000000019281958a10000d1465627840def0600000000000000001200"
+      },
+      {
+        "world_map_id": 7,
+        "map_name_text_id": 60513,
+        "scene_desc_text_id": 61813,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 6280,
+        "show_y": 11180,
+        "explore_level_text_id": 34242,
+        "mark_id": 18131,
+        "portal_scene_id": 12355,
+        "portal_x": 1670,
+        "portal_y": 690,
+        "dummy_level": 85,
+        "dummy_area_name_text_id": 12355,
+        "dummy_x": 1670,
+        "dummy_y": 690,
+        "ui_sell_id": 17,
+        "name": "南極",
+        "record_offset": 250,
+        "record_size": 41,
+        "record_hex": "070061ec000075f1000000010000008818ac2bc2850000d34643308606b202550043308606b2021100"
+      },
+      {
+        "world_map_id": 8,
+        "map_name_text_id": 34177,
+        "scene_desc_text_id": 61814,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 4220,
+        "show_y": 10320,
+        "explore_level_text_id": 41312,
+        "mark_id": 18133,
+        "portal_scene_id": 11152,
+        "portal_x": 441,
+        "portal_y": 331,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 72,
+        "name": "天空之城",
+        "record_offset": 291,
+        "record_size": 41,
+        "record_hex": "08008185000076f1000000010000007c10502860a10000d546902bb9014b0100000000000000004800"
+      },
+      {
+        "world_map_id": 9,
+        "map_name_text_id": 34178,
+        "scene_desc_text_id": 61815,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 2270,
+        "show_y": 10835,
+        "explore_level_text_id": 41306,
+        "mark_id": 18135,
+        "portal_scene_id": 12367,
+        "portal_x": 674,
+        "portal_y": 1352,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 18,
+        "name": "雪島",
+        "record_offset": 332,
+        "record_size": 41,
+        "record_hex": "09008285000077f100000001000000de08532a5aa10000d7464f30a202480500000000000000001200"
+      },
+      {
+        "world_map_id": 10,
+        "map_name_text_id": 34179,
+        "scene_desc_text_id": 61816,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 5800,
+        "show_y": 5560,
+        "explore_level_text_id": 34250,
+        "mark_id": 18137,
+        "portal_scene_id": 10069,
+        "portal_x": 1840,
+        "portal_y": 2075,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 18,
+        "name": "婆羅洲",
+        "record_offset": 373,
+        "record_size": 41,
+        "record_hex": "0a008385000078f100000001000000a816b815ca850000d946552730071b0800000000000000001200"
+      },
+      {
+        "world_map_id": 11,
+        "map_name_text_id": 60247,
+        "scene_desc_text_id": 61817,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 3700,
+        "show_y": 6180,
+        "explore_level_text_id": 34250,
+        "mark_id": 18139,
+        "portal_scene_id": 11135,
+        "portal_x": 1900,
+        "portal_y": 1495,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 18,
+        "name": "半獸人島",
+        "record_offset": 414,
+        "record_size": 41,
+        "record_hex": "0b0057eb000079f100000001000000740e2418ca850000db467f2b6c07d70500000000000000001200"
+      },
+      {
+        "world_map_id": 12,
+        "map_name_text_id": 60257,
+        "scene_desc_text_id": 61818,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 4160,
+        "show_y": 4700,
+        "explore_level_text_id": 41313,
+        "mark_id": 18141,
+        "portal_scene_id": 11145,
+        "portal_x": 3362,
+        "portal_y": 1795,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 18,
+        "name": "甲蟲島",
+        "record_offset": 455,
+        "record_size": 41,
+        "record_hex": "0c0061eb00007af10000000100000040105c1261a10000dd46892b220d030700000000000000001200"
+      },
+      {
+        "world_map_id": 13,
+        "map_name_text_id": 60496,
+        "scene_desc_text_id": 61819,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 4775,
+        "show_y": 3820,
+        "explore_level_text_id": 34249,
+        "mark_id": 18143,
+        "portal_scene_id": 12300,
+        "portal_x": 1963,
+        "portal_y": 1638,
+        "dummy_level": 105,
+        "dummy_area_name_text_id": 12300,
+        "dummy_x": 1610,
+        "dummy_y": 1550,
+        "ui_sell_id": 18,
+        "name": "加爾喀達",
+        "record_offset": 496,
+        "record_size": 41,
+        "record_hex": "0d0050ec00007bf100000001000000a712ec0ec9850000df460c30ab07660669000c304a060e061200"
+      },
+      {
+        "world_map_id": 14,
+        "map_name_text_id": 61118,
+        "scene_desc_text_id": 61820,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 10540,
+        "show_y": 9450,
+        "explore_level_text_id": 34243,
+        "mark_id": 18145,
+        "portal_scene_id": 60004,
+        "portal_x": 5750,
+        "portal_y": 1955,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 15,
+        "name": "復活島",
+        "record_offset": 537,
+        "record_size": 41,
+        "record_hex": "0e00beee00007cf1000000010000002c29ea24c3850000e14664ea7616a30700000000000000000f00"
+      },
+      {
+        "world_map_id": 15,
+        "map_name_text_id": 61129,
+        "scene_desc_text_id": 61821,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 11400,
+        "show_y": 7700,
+        "explore_level_text_id": 41314,
+        "mark_id": 18147,
+        "portal_scene_id": 60015,
+        "portal_x": 4040,
+        "portal_y": 355,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 71,
+        "name": "印加",
+        "record_offset": 578,
+        "record_size": 41,
+        "record_hex": "0f00c9ee00007df100000001000000882c141e62a10000e3466feac80f630100000000000000004700"
+      },
+      {
+        "world_map_id": 16,
+        "map_name_text_id": 61119,
+        "scene_desc_text_id": 61822,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 11510,
+        "show_y": 5968,
+        "explore_level_text_id": 34244,
+        "mark_id": 18149,
+        "portal_scene_id": 60005,
+        "portal_x": 1105,
+        "portal_y": 1366,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 16,
+        "name": "瑪雅叢林",
+        "record_offset": 619,
+        "record_size": 41,
+        "record_hex": "1000bfee00007ef100000001000000f62c5017c4850000e54665ea5104560500000000000000001000"
+      },
+      {
+        "world_map_id": 17,
+        "map_name_text_id": 60514,
+        "scene_desc_text_id": 61823,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 11460,
+        "show_y": 10720,
+        "explore_level_text_id": 34245,
+        "mark_id": 18151,
+        "portal_scene_id": 12356,
+        "portal_x": 1580,
+        "portal_y": 1255,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 16,
+        "name": "冰山",
+        "record_offset": 660,
+        "record_size": 41,
+        "record_hex": "110062ec00007ff100000001000000c42ce029c5850000e74644302c06e70400000000000000001000"
+      },
+      {
+        "world_map_id": 18,
+        "map_name_text_id": 60841,
+        "scene_desc_text_id": 61824,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 7480,
+        "show_y": 4260,
+        "explore_level_text_id": 41315,
+        "mark_id": 18153,
+        "portal_scene_id": 12950,
+        "portal_x": 2265,
+        "portal_y": 2395,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 18,
+        "name": "菲律賓",
+        "record_offset": 701,
+        "record_size": 41,
+        "record_hex": "1200a9ed000080f100000001000000381da41063a10000e9469632d9085b0900000000000000001200"
+      },
+      {
+        "world_map_id": 19,
+        "map_name_text_id": 60625,
+        "scene_desc_text_id": 61825,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 5820,
+        "show_y": 4300,
+        "explore_level_text_id": 41303,
+        "mark_id": 18155,
+        "portal_scene_id": 12601,
+        "portal_x": 342,
+        "portal_y": 415,
+        "dummy_level": 125,
+        "dummy_area_name_text_id": 12601,
+        "dummy_x": 437,
+        "dummy_y": 244,
+        "ui_sell_id": 57,
+        "name": "曼谷",
+        "record_offset": 742,
+        "record_size": 41,
+        "record_hex": "1300d1ec000081f100000001000000bc16cc1057a10000eb46393156019f017d003931b501f4003900"
+      },
+      {
+        "world_map_id": 20,
+        "map_name_text_id": 61126,
+        "scene_desc_text_id": 61826,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 7080,
+        "show_y": 3320,
+        "explore_level_text_id": 61866,
+        "mark_id": 18157,
+        "portal_scene_id": 60012,
+        "portal_x": 2845,
+        "portal_y": 780,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 15,
+        "name": "台灣",
+        "record_offset": 783,
+        "record_size": 41,
+        "record_hex": "1400c6ee000082f100000001000000a81bf80caaf10000ed466cea1d0b0c0300000000000000000f00"
+      },
+      {
+        "world_map_id": 21,
+        "map_name_text_id": 60357,
+        "scene_desc_text_id": 61827,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 6300,
+        "show_y": 3720,
+        "explore_level_text_id": 41311,
+        "mark_id": 18159,
+        "portal_scene_id": 12105,
+        "portal_x": 2000,
+        "portal_y": 1555,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 57,
+        "name": "崖州",
+        "record_offset": 824,
+        "record_size": 41,
+        "record_hex": "1500c5eb000083f1000000010000009c18880e5fa10000ef46492fd007130600000000000000003900"
+      },
+      {
+        "world_map_id": 22,
+        "map_name_text_id": 34180,
+        "scene_desc_text_id": 61828,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 6935,
+        "show_y": 2965,
+        "explore_level_text_id": 34246,
+        "mark_id": 18161,
+        "portal_scene_id": 12100,
+        "portal_x": 1800,
+        "portal_y": 1300,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 15,
+        "name": "中國漁村",
+        "record_offset": 865,
+        "record_size": 41,
+        "record_hex": "16008485000084f100000001000000171b950bc6850000f146442f0807140500000000000000000f00"
+      },
+      {
+        "world_map_id": 23,
+        "map_name_text_id": 60362,
+        "scene_desc_text_id": 61829,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 6175,
+        "show_y": 2900,
+        "explore_level_text_id": 41316,
+        "mark_id": 18163,
+        "portal_scene_id": 12110,
+        "portal_x": 1660,
+        "portal_y": 1270,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 72,
+        "name": "長安",
+        "record_offset": 906,
+        "record_size": 41,
+        "record_hex": "1700caeb000085f1000000010000001f18540b64a10000f3464e2f7c06f60400000000000000004800"
+      },
+      {
+        "world_map_id": 24,
+        "map_name_text_id": 34181,
+        "scene_desc_text_id": 61830,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 9220,
+        "show_y": 3980,
+        "explore_level_text_id": 34247,
+        "mark_id": 18165,
+        "portal_scene_id": 60008,
+        "portal_x": 1750,
+        "portal_y": 3900,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 15,
+        "name": "夏威夷大島",
+        "record_offset": 947,
+        "record_size": 41,
+        "record_hex": "18008585000086f10000000100000004248c0fc7850000f54668ead6063c0f00000000000000000f00"
+      },
+      {
+        "world_map_id": 25,
+        "map_name_text_id": 34182,
+        "scene_desc_text_id": 61831,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 8940,
+        "show_y": 3700,
+        "explore_level_text_id": 34250,
+        "mark_id": 18167,
+        "portal_scene_id": 60009,
+        "portal_x": 1442,
+        "portal_y": 1315,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 15,
+        "name": "夏威夷小島",
+        "record_offset": 988,
+        "record_size": 41,
+        "record_hex": "19008685000087f100000001000000ec22740eca850000f74669eaa205230500000000000000000f00"
+      },
+      {
+        "world_map_id": 26,
+        "map_name_text_id": 34183,
+        "scene_desc_text_id": 61832,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 7460,
+        "show_y": 2420,
+        "explore_level_text_id": 41318,
+        "mark_id": 18169,
+        "portal_scene_id": 12850,
+        "portal_x": 2240,
+        "portal_y": 1695,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 71,
+        "name": "邪馬台",
+        "record_offset": 1029,
+        "record_size": 41,
+        "record_hex": "1a008785000088f100000001000000241d740966a10000f9463232c0089f0600000000000000004700"
+      },
+      {
+        "world_map_id": 27,
+        "map_name_text_id": 61125,
+        "scene_desc_text_id": 61833,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 7920,
+        "show_y": 2290,
+        "explore_level_text_id": 34248,
+        "mark_id": 18171,
+        "portal_scene_id": 60011,
+        "portal_x": 5145,
+        "portal_y": 355,
+        "dummy_level": 145,
+        "dummy_area_name_text_id": 60011,
+        "dummy_x": 4890,
+        "dummy_y": 250,
+        "ui_sell_id": 16,
+        "name": "關西",
+        "record_offset": 1070,
+        "record_size": 41,
+        "record_hex": "1b00c5ee000089f100000001000000f01ef208c8850000fb466bea1914630191006bea1a13fa001000"
+      },
+      {
+        "world_map_id": 28,
+        "map_name_text_id": 60477,
+        "scene_desc_text_id": 61834,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 8320,
+        "show_y": 1460,
+        "explore_level_text_id": 41307,
+        "mark_id": 18173,
+        "portal_scene_id": 12281,
+        "portal_x": 340,
+        "portal_y": 415,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 58,
+        "name": "蝦夷",
+        "record_offset": 1111,
+        "record_size": 41,
+        "record_hex": "1c003dec00008af1000000010000008020b4055ba10000fd46f92f54019f0100000000000000003a00"
+      },
+      {
+        "world_map_id": 29,
+        "map_name_text_id": 61127,
+        "scene_desc_text_id": 61835,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 6900,
+        "show_y": 2180,
+        "explore_level_text_id": 41308,
+        "mark_id": 18175,
+        "portal_scene_id": 60013,
+        "portal_x": 3045,
+        "portal_y": 5235,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 58,
+        "name": "朝鮮",
+        "record_offset": 1152,
+        "record_size": 41,
+        "record_hex": "1d00c7ee00008bf100000001000000f41a84085ca10000ff466deae50b731400000000000000003a00"
+      },
+      {
+        "world_map_id": 30,
+        "map_name_text_id": 34184,
+        "scene_desc_text_id": 61836,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 9040,
+        "show_y": 1060,
+        "explore_level_text_id": 41310,
+        "mark_id": 18177,
+        "portal_scene_id": 12286,
+        "portal_x": 3180,
+        "portal_y": 875,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 58,
+        "name": "鬼島",
+        "record_offset": 1193,
+        "record_size": 41,
+        "record_hex": "1e00888500008cf100000001000000502324045ea100000147fe2f6c0c6b0300000000000000003a00"
+      },
+      {
+        "world_map_id": 31,
+        "map_name_text_id": 60239,
+        "scene_desc_text_id": 61837,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 1860,
+        "show_y": 6120,
+        "explore_level_text_id": 41305,
+        "mark_id": 18179,
+        "portal_scene_id": 11127,
+        "portal_x": 3040,
+        "portal_y": 340,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 18,
+        "name": "馬達加斯加",
+        "record_offset": 1234,
+        "record_size": 41,
+        "record_hex": "1f004feb00008df1000000010000004407e81759a100000347772be00b540100000000000000001200"
+      },
+      {
+        "world_map_id": 32,
+        "map_name_text_id": 60703,
+        "scene_desc_text_id": 61838,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 1280,
+        "show_y": 5300,
+        "explore_level_text_id": 41319,
+        "mark_id": 18181,
+        "portal_scene_id": 12700,
+        "portal_x": 2500,
+        "portal_y": 2110,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 72,
+        "name": "非洲村落",
+        "record_offset": 1275,
+        "record_size": 41,
+        "record_hex": "20001fed00008ef1000000010000000005b41467a1000005479c31c4093e0800000000000000004800"
+      },
+      {
+        "world_map_id": 33,
+        "map_name_text_id": 60894,
+        "scene_desc_text_id": 61839,
+        "open_setting": 1,
+        "area": 1,
+        "show_x": 3000,
+        "show_y": 3050,
+        "explore_level_text_id": 0,
+        "mark_id": 18183,
+        "portal_scene_id": 13100,
+        "portal_x": 930,
+        "portal_y": 1870,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 1,
+        "name": "波斯",
+        "record_offset": 1316,
+        "record_size": 41,
+        "record_hex": "2100deed00008ff100000101000000b80bea0b0000000007472c33a2034e0700000000000000000100"
+      },
+      {
+        "world_map_id": 34,
+        "map_name_text_id": 60569,
+        "scene_desc_text_id": 61840,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 1240,
+        "show_y": 3100,
+        "explore_level_text_id": 41309,
+        "mark_id": 18185,
+        "portal_scene_id": 12500,
+        "portal_x": 3106,
+        "portal_y": 1817,
+        "dummy_level": 165,
+        "dummy_area_name_text_id": 12500,
+        "dummy_x": 3170,
+        "dummy_y": 1590,
+        "ui_sell_id": 71,
+        "name": "開羅",
+        "record_offset": 1357,
+        "record_size": 41,
+        "record_hex": "220099ec000090f100000001000000d8041c0c5da100000947d430220c1907a500d430620c36064700"
+      },
+      {
+        "world_map_id": 35,
+        "map_name_text_id": 60819,
+        "scene_desc_text_id": 61841,
+        "open_setting": 1,
+        "area": 2,
+        "show_x": 3427,
+        "show_y": 2717,
+        "explore_level_text_id": 0,
+        "mark_id": 18187,
+        "portal_scene_id": 12905,
+        "portal_x": 2680,
+        "portal_y": 270,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 1,
+        "name": "凝視之森",
+        "record_offset": 1398,
+        "record_size": 41,
+        "record_hex": "230093ed000091f100000102000000630d9d0a000000000b476932780a0e0100000000000000000100"
+      },
+      {
+        "world_map_id": 36,
+        "map_name_text_id": 34185,
+        "scene_desc_text_id": 61842,
+        "open_setting": 0,
+        "area": 2,
+        "show_x": 3057,
+        "show_y": 2573,
+        "explore_level_text_id": 41321,
+        "mark_id": 18189,
+        "portal_scene_id": 12800,
+        "portal_x": 1340,
+        "portal_y": 2135,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 85,
+        "name": "雅典",
+        "record_offset": 1439,
+        "record_size": 41,
+        "record_hex": "24008985000092f100000002000000f10b0d0a69a100000d4700323c05570800000000000000005500"
+      },
+      {
+        "world_map_id": 37,
+        "map_name_text_id": 60958,
+        "scene_desc_text_id": 61843,
+        "open_setting": 1,
+        "area": 2,
+        "show_x": 2635,
+        "show_y": 2242,
+        "explore_level_text_id": 0,
+        "mark_id": 18191,
+        "portal_scene_id": 13200,
+        "portal_x": 2270,
+        "portal_y": 1290,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 1,
+        "name": "羅馬",
+        "record_offset": 1480,
+        "record_size": 41,
+        "record_hex": "25001eee000093f1000001020000004b0ac208000000000f479033de080a0500000000000000000100"
+      },
+      {
+        "world_map_id": 38,
+        "map_name_text_id": 61011,
+        "scene_desc_text_id": 61844,
+        "open_setting": 1,
+        "area": 2,
+        "show_x": 2207,
+        "show_y": 1952,
+        "explore_level_text_id": 0,
+        "mark_id": 18193,
+        "portal_scene_id": 13261,
+        "portal_x": 1900,
+        "portal_y": 235,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 1,
+        "name": "洛林之森",
+        "record_offset": 1521,
+        "record_size": 41,
+        "record_hex": "260053ee000094f1000001020000009f08a007000000001147cd336c07eb0000000000000000000100"
+      },
+      {
+        "world_map_id": 39,
+        "map_name_text_id": 60935,
+        "scene_desc_text_id": 61845,
+        "open_setting": 1,
+        "area": 2,
+        "show_x": 1987,
+        "show_y": 1219,
+        "explore_level_text_id": 0,
+        "mark_id": 18195,
+        "portal_scene_id": 13164,
+        "portal_x": 1765,
+        "portal_y": 390,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 1,
+        "name": "迷霧之森",
+        "record_offset": 1562,
+        "record_size": 41,
+        "record_hex": "270007ee000095f100000102000000c307c3040000000013476c33e506860100000000000000000100"
+      },
+      {
+        "world_map_id": 40,
+        "map_name_text_id": 61121,
+        "scene_desc_text_id": 61846,
+        "open_setting": 1,
+        "area": 1,
+        "show_x": 4950,
+        "show_y": 6650,
+        "explore_level_text_id": 0,
+        "mark_id": 18197,
+        "portal_scene_id": 60007,
+        "portal_x": 1040,
+        "portal_y": 1335,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 1,
+        "name": "聯強國際",
+        "record_offset": 1603,
+        "record_size": 41,
+        "record_hex": "2800c1ee000096f1000001010000005613fa1900000000154767ea1004370500000000000000000100"
+      },
+      {
+        "world_map_id": 41,
+        "map_name_text_id": 61233,
+        "scene_desc_text_id": 61923,
+        "open_setting": 0,
+        "area": 1,
+        "show_x": 9640,
+        "show_y": 7500,
+        "explore_level_text_id": 41320,
+        "mark_id": 18221,
+        "portal_scene_id": 15093,
+        "portal_x": 2899,
+        "portal_y": 3122,
+        "dummy_level": 185,
+        "dummy_area_name_text_id": 15093,
+        "dummy_x": 3265,
+        "dummy_y": 2918,
+        "ui_sell_id": 72,
+        "name": "巨鯨島",
+        "record_offset": 1644,
+        "record_size": 41,
+        "record_hex": "290031ef0000e3f100000001000000a8254c1d68a100002d47f53a530b320cb900f53ac10c660b4800"
+      },
+      {
+        "world_map_id": 42,
+        "map_name_text_id": 63639,
+        "scene_desc_text_id": 0,
+        "open_setting": 1,
+        "area": 1,
+        "show_x": 0,
+        "show_y": 0,
+        "explore_level_text_id": 0,
+        "mark_id": 0,
+        "portal_scene_id": 0,
+        "portal_x": 0,
+        "portal_y": 0,
+        "dummy_level": 0,
+        "dummy_area_name_text_id": 0,
+        "dummy_x": 0,
+        "dummy_y": 0,
+        "ui_sell_id": 0,
+        "name": "潤水星",
+        "record_offset": 1685,
+        "record_size": 41,
+        "record_hex": "2a0097f800000000000001010000000000000000000000000000000000000000000000000000000000"
+      }
+    ]
+  },
+  "localized_names": [
+    {
+      "id": 34176,
+      "value": "司徒華島",
+      "record_offset": 303146,
+      "record_hex": "808500000800f853925fef83f65c"
+    },
+    {
+      "id": 34177,
+      "value": "天空之城",
+      "record_offset": 303160,
+      "record_hex": "81850000080029597a7a4b4ece57"
+    },
+    {
+      "id": 34178,
+      "value": "雪島",
+      "record_offset": 303174,
+      "record_hex": "828500000400ea96f65c"
+    },
+    {
+      "id": 34179,
+      "value": "婆羅洲",
+      "record_offset": 303184,
+      "record_hex": "838500000600465a857f326d"
+    },
+    {
+      "id": 34180,
+      "value": "中國漁村",
+      "record_offset": 303196,
+      "record_hex": "8485000008002d4e0b57016f5167"
+    },
+    {
+      "id": 34181,
+      "value": "夏威夷大島",
+      "record_offset": 303210,
+      "record_hex": "858500000a000f59015a37592759f65c"
+    },
+    {
+      "id": 34182,
+      "value": "夏威夷小島",
+      "record_offset": 303226,
+      "record_hex": "868500000a000f59015a37590f5cf65c"
+    },
+    {
+      "id": 34183,
+      "value": "邪馬台",
+      "record_offset": 303242,
+      "record_hex": "878500000600aa90ac99f053"
+    },
+    {
+      "id": 34184,
+      "value": "鬼島",
+      "record_offset": 303254,
+      "record_hex": "8885000004003c9bf65c"
+    },
+    {
+      "id": 34185,
+      "value": "雅典",
+      "record_offset": 303264,
+      "record_hex": "898500000400c5967851"
+    },
+    {
+      "id": 60070,
+      "value": "雷龍島",
+      "record_offset": 505054,
+      "record_hex": "a6ea00000600f7968d9ff65c"
+    },
+    {
+      "id": 60239,
+      "value": "馬達加斯加",
+      "record_offset": 507812,
+      "record_hex": "4feb00000a00ac995490a052af65a052"
+    },
+    {
+      "id": 60247,
+      "value": "半獸人島",
+      "record_offset": 507942,
+      "record_hex": "57eb000008004a537873ba4ef65c"
+    },
+    {
+      "id": 60257,
+      "value": "甲蟲島",
+      "record_offset": 508108,
+      "record_hex": "61eb000006003275f287f65c"
+    },
+    {
+      "id": 60357,
+      "value": "崖州",
+      "record_offset": 509646,
+      "record_hex": "c5eb00000400165dde5d"
+    },
+    {
+      "id": 60362,
+      "value": "長安",
+      "record_offset": 509718,
+      "record_hex": "caeb000004007795895b"
+    },
+    {
+      "id": 60477,
+      "value": "蝦夷",
+      "record_offset": 511534,
+      "record_hex": "3dec0000040066873759"
+    },
+    {
+      "id": 60496,
+      "value": "加爾喀達",
+      "record_offset": 511828,
+      "record_hex": "50ec00000800a0523e7280555490"
+    },
+    {
+      "id": 60513,
+      "value": "南極",
+      "record_offset": 512102,
+      "record_hex": "61ec0000040057537569"
+    },
+    {
+      "id": 60514,
+      "value": "冰山",
+      "record_offset": 512112,
+      "record_hex": "62ec00000400b051715c"
+    },
+    {
+      "id": 60569,
+      "value": "開羅",
+      "record_offset": 512964,
+      "record_hex": "99ec000004008b95857f"
+    },
+    {
+      "id": 60625,
+      "value": "曼谷",
+      "record_offset": 513838,
+      "record_hex": "d1ec00000400fc66378c"
+    },
+    {
+      "id": 60703,
+      "value": "非洲村落",
+      "record_offset": 515094,
+      "record_hex": "1fed000008005e97326d51673d84"
+    },
+    {
+      "id": 60819,
+      "value": "凝視之森",
+      "record_offset": 516782,
+      "record_hex": "93ed00000800dd5196894b4eee68"
+    },
+    {
+      "id": 60841,
+      "value": "菲律賓",
+      "record_offset": 517074,
+      "record_hex": "a9ed00000600f2838b5fd38c"
+    },
+    {
+      "id": 60886,
+      "value": "練功中央島",
+      "record_offset": 517684,
+      "record_hex": "d6ed00000a00f47d9f522d4e2e59f65c"
+    },
+    {
+      "id": 60894,
+      "value": "波斯",
+      "record_offset": 517824,
+      "record_hex": "deed00000400e26caf65"
+    },
+    {
+      "id": 60935,
+      "value": "迷霧之森",
+      "record_offset": 518338,
+      "record_hex": "07ee00000800f78f27974b4eee68"
+    },
+    {
+      "id": 60958,
+      "value": "羅馬",
+      "record_offset": 518630,
+      "record_hex": "1eee00000400857fac99"
+    },
+    {
+      "id": 61011,
+      "value": "洛林之森",
+      "record_offset": 519300,
+      "record_hex": "53ee000008001b6d97674b4eee68"
+    },
+    {
+      "id": 61118,
+      "value": "復活島",
+      "record_offset": 520808,
+      "record_hex": "beee00000600a95f3b6df65c"
+    },
+    {
+      "id": 61119,
+      "value": "瑪雅叢林",
+      "record_offset": 520820,
+      "record_hex": "bfee000008006a74c596e2539767"
+    },
+    {
+      "id": 61120,
+      "value": "澳斯利亞",
+      "record_offset": 520834,
+      "record_hex": "c0ee00000800b36faf6529529e4e"
+    },
+    {
+      "id": 61121,
+      "value": "聯強國際",
+      "record_offset": 520848,
+      "record_hex": "c1ee000008006f80375f0b579b96"
+    },
+    {
+      "id": 61125,
+      "value": "關西",
+      "record_offset": 520904,
+      "record_hex": "c5ee00000400dc957f89"
+    },
+    {
+      "id": 61126,
+      "value": "台灣",
+      "record_offset": 520914,
+      "record_hex": "c6ee00000400f0536370"
+    },
+    {
+      "id": 61127,
+      "value": "朝鮮",
+      "record_offset": 520924,
+      "record_hex": "c7ee000004001d67ae9b"
+    },
+    {
+      "id": 61129,
+      "value": "印加",
+      "record_offset": 520944,
+      "record_hex": "c9ee000004007053a052"
+    },
+    {
+      "id": 61233,
+      "value": "巨鯨島",
+      "record_offset": 522602,
+      "record_hex": "31ef00000600e85de89bf65c"
+    },
+    {
+      "id": 61801,
+      "value": "北島",
+      "record_offset": 540802,
+      "record_hex": "69f1000004001753f65c"
+    },
+    {
+      "id": 61802,
+      "value": "南島",
+      "record_offset": 540812,
+      "record_hex": "6af1000004005753f65c"
+    },
+    {
+      "id": 63639,
+      "value": "潤水星",
+      "record_offset": 560288,
+      "record_hex": "97f800000600646f346c1f66"
+    }
+  ],
+  "scene_memberships": [
+    {
+      "scene_id": 10070,
+      "name": "雷龍島",
+      "map_group": 6,
+      "chest_count": 1,
+      "world_map_id": 6,
+      "portal_scene_id": 10070,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 5400,
+      "record_size": 76,
+      "record_hex": "56270a00a6ea000056270a0000000001009eef000000000000060000000000000000000000000000000000000000000000000000822d003200020438000c0000000000000000000000000100",
+      "map_group_byte_offset": 5425,
+      "map_group_byte_hex": "06"
+    },
+    {
+      "scene_id": 10071,
+      "name": "席貝兒的家",
+      "map_group": 10,
+      "chest_count": 1,
+      "world_map_id": 10,
+      "portal_scene_id": 10069,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 5476,
+      "record_size": 76,
+      "record_hex": "57270300a7ea000057270a0000000001009fef0000000000000a00000000000000000000000000000000000000000000000000007c06000a0002040000000000000000000000000000000000",
+      "map_group_byte_offset": 5501,
+      "map_group_byte_hex": "0a"
+    },
+    {
+      "scene_id": 10161,
+      "name": "澳洲山頂通道",
+      "map_group": 0,
+      "chest_count": 1,
+      "world_map_id": null,
+      "portal_scene_id": null,
+      "mapped": false,
+      "unmapped_reason": "no_world_map_group",
+      "record_offset": 11252,
+      "record_size": 76,
+      "record_hex": "b127040080ec00004530640000000000000000000000000000000000000000000000000000000000000000000000000000000000002d002d0002040c000c0000000000000000000000000000",
+      "map_group_byte_offset": 11277,
+      "map_group_byte_hex": "00"
+    },
+    {
+      "scene_id": 10162,
+      "name": "澳洲山頂通道",
+      "map_group": 0,
+      "chest_count": 1,
+      "world_map_id": null,
+      "portal_scene_id": null,
+      "mapped": false,
+      "unmapped_reason": "no_world_map_group",
+      "record_offset": 11328,
+      "record_size": 76,
+      "record_hex": "b227040080ec0000482b640000000000000000000000000000000000000000000000000000000000000000000000000000000000302030200002040c000c0000000000000000000000000000",
+      "map_group_byte_offset": 11353,
+      "map_group_byte_hex": "00"
+    },
+    {
+      "scene_id": 11037,
+      "name": "司徒華島迷宮二層",
+      "map_group": 3,
+      "chest_count": 1,
+      "world_map_id": 3,
+      "portal_scene_id": 15010,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 14900,
+      "record_size": 76,
+      "record_hex": "1d2b0400f7ea00001d2b050000000001005ef1000000000000030000000000000000000000000000000000000000000000000000002d002d0002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 14925,
+      "map_group_byte_hex": "03"
+    },
+    {
+      "scene_id": 11069,
+      "name": "夏威夷山洞",
+      "map_group": 24,
+      "chest_count": 1,
+      "world_map_id": 24,
+      "portal_scene_id": 60008,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 17332,
+      "record_size": 76,
+      "record_hex": "3d2b040017eb00003d2b05000000000100c7ef000000000000180000000000000000000000000000000000000000000000000000c021c0210002040000000000000000000000000000000100",
+      "map_group_byte_offset": 17357,
+      "map_group_byte_hex": "18"
+    },
+    {
+      "scene_id": 11080,
+      "name": "恐龍巢穴深處",
+      "map_group": 4,
+      "chest_count": 1,
+      "world_map_id": 4,
+      "portal_scene_id": 60006,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 18168,
+      "record_size": 76,
+      "record_hex": "482b090022eb0000482b0500000000010051f1000000000000040000000000000000000000000000000000000000000000000000302030200002040c000c0000000000000000000000000000",
+      "map_group_byte_offset": 18193,
+      "map_group_byte_hex": "04"
+    },
+    {
+      "scene_id": 11087,
+      "name": "樹洞三層",
+      "map_group": 20,
+      "chest_count": 1,
+      "world_map_id": 20,
+      "portal_scene_id": 60012,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 18700,
+      "record_size": 76,
+      "record_hex": "4f2b040029eb00004f2b0500000000010063f1000000000000140000000000000000000000000000000000000000000000000000c021c0210002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 18725,
+      "map_group_byte_hex": "14"
+    },
+    {
+      "scene_id": 11122,
+      "name": "幽靈船上層艙",
+      "map_group": 0,
+      "chest_count": 1,
+      "world_map_id": null,
+      "portal_scene_id": null,
+      "mapped": false,
+      "unmapped_reason": "no_world_map_group",
+      "record_offset": 21208,
+      "record_size": 76,
+      "record_hex": "722b04004aeb0000722b1f000000000100dfef000000000000000000000000000000000000000000000000000000000000000000602760270002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 21233,
+      "map_group_byte_hex": "00"
+    },
+    {
+      "scene_id": 11125,
+      "name": "庫克船船艙一層",
+      "map_group": 0,
+      "chest_count": 1,
+      "world_map_id": null,
+      "portal_scene_id": null,
+      "mapped": false,
+      "unmapped_reason": "no_world_map_group",
+      "record_offset": 21436,
+      "record_size": 76,
+      "record_hex": "752b04004deb0000752b05000000000100beef000000000000000000000000000000000000000000000000000000000000000000602760270002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 21461,
+      "map_group_byte_hex": "00"
+    },
+    {
+      "scene_id": 11127,
+      "name": "馬達加斯加",
+      "map_group": 31,
+      "chest_count": 1,
+      "world_map_id": 31,
+      "portal_scene_id": 11127,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 21588,
+      "record_size": 76,
+      "record_hex": "772b0a004feb0000772b02000000000100e0ef0000000000001f0000000000000000000000000000000000000000000000000000822d003200020439000c0000000000000000000000000100",
+      "map_group_byte_offset": 21613,
+      "map_group_byte_hex": "1f"
+    },
+    {
+      "scene_id": 11132,
+      "name": "鄭和艦船艙下層",
+      "map_group": 0,
+      "chest_count": 1,
+      "world_map_id": null,
+      "portal_scene_id": null,
+      "mapped": false,
+      "unmapped_reason": "no_world_map_group",
+      "record_offset": 21968,
+      "record_size": 76,
+      "record_hex": "7c2b040054eb00007c2b05000000000100e3ef000000000000000000000000000000000000000000000000000000000000000000201c201c0002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 21993,
+      "map_group_byte_hex": "00"
+    },
+    {
+      "scene_id": 11135,
+      "name": "半獸人島",
+      "map_group": 11,
+      "chest_count": 1,
+      "world_map_id": 11,
+      "portal_scene_id": 11135,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 22196,
+      "record_size": 76,
+      "record_hex": "7f2b0a0057eb00007f2b0a000000000100e5ef0000000000000b0000000000000000000000000000000000000000000000000000822d003200020438000c0000000000000000000000000000",
+      "map_group_byte_offset": 22221,
+      "map_group_byte_hex": "0b"
+    },
+    {
+      "scene_id": 11145,
+      "name": "甲蟲島",
+      "map_group": 12,
+      "chest_count": 1,
+      "world_map_id": 12,
+      "portal_scene_id": 11145,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 22956,
+      "record_size": 76,
+      "record_hex": "892b0a0061eb0000892b02000000000100ebef0000000000000c0000000000000000000000000000000000000000000000000000822d003200020439000c0000000000000000000000000000",
+      "map_group_byte_offset": 22981,
+      "map_group_byte_hex": "0c"
+    },
+    {
+      "scene_id": 11164,
+      "name": "火星",
+      "map_group": 0,
+      "chest_count": 1,
+      "world_map_id": null,
+      "portal_scene_id": null,
+      "mapped": false,
+      "unmapped_reason": "no_world_map_group",
+      "record_offset": 24400,
+      "record_size": 76,
+      "record_hex": "9c2b0f0074eb00009c2b1a004400000100f2ef000000000000000000000000000000000000000000000000000000000000000000800c001900020205010c0000000000000000000000000000",
+      "map_group_byte_offset": 24425,
+      "map_group_byte_hex": "00"
+    },
+    {
+      "scene_id": 11176,
+      "name": "沈船船艙一層",
+      "map_group": 0,
+      "chest_count": 1,
+      "world_map_id": null,
+      "portal_scene_id": null,
+      "mapped": false,
+      "unmapped_reason": "no_world_map_group",
+      "record_offset": 25312,
+      "record_size": 76,
+      "record_hex": "a82b040080eb0000a82b1f000000000100f5ef000000000000000000000000000000000000000000000000000000000000000000201c201c0002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 25337,
+      "map_group_byte_hex": "00"
+    },
+    {
+      "scene_id": 11182,
+      "name": "月殿通道",
+      "map_group": 0,
+      "chest_count": 1,
+      "world_map_id": null,
+      "portal_scene_id": null,
+      "mapped": false,
+      "unmapped_reason": "no_world_map_group",
+      "record_offset": 25768,
+      "record_size": 76,
+      "record_hex": "ae2b030086eb0000ae2b05000000000100f8ef0000000000000000000000000000000000000000000000000000000000000000008106000a000204ba000c0000000000000000000000000000",
+      "map_group_byte_offset": 25793,
+      "map_group_byte_hex": "00"
+    },
+    {
+      "scene_id": 12104,
+      "name": "中國森林",
+      "map_group": 22,
+      "chest_count": 1,
+      "world_map_id": 22,
+      "portal_scene_id": 12100,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 30708,
+      "record_size": 76,
+      "record_hex": "482f0600c4eb0000482f050000000001001bf0000000000000160000000000000000000000000000000000000000000000000000d81cd81c0002040c000c0000000000000000000000000000",
+      "map_group_byte_offset": 30733,
+      "map_group_byte_hex": "16"
+    },
+    {
+      "scene_id": 12110,
+      "name": "長安",
+      "map_group": 23,
+      "chest_count": 1,
+      "world_map_id": 23,
+      "portal_scene_id": 12110,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 31164,
+      "record_size": 76,
+      "record_hex": "4e2f0200caeb00004e2f0800000000010091ef000000000000170000000000000000000000000000000000000000000000000000f011701700020481000c0000000000000000000000000000",
+      "map_group_byte_offset": 31189,
+      "map_group_byte_hex": "17"
+    },
+    {
+      "scene_id": 12126,
+      "name": "長城關道一",
+      "map_group": 23,
+      "chest_count": 1,
+      "world_map_id": 23,
+      "portal_scene_id": 12110,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 32380,
+      "record_size": 76,
+      "record_hex": "5e2f0600daeb00005e2f050000000001002c0c010000000000170000000000000000000000000000000000000000000000000000621940140002040c00710000000000000000000000000000",
+      "map_group_byte_offset": 32405,
+      "map_group_byte_hex": "17"
+    },
+    {
+      "scene_id": 12161,
+      "name": "瑪雅山洞地下",
+      "map_group": 16,
+      "chest_count": 1,
+      "world_map_id": 16,
+      "portal_scene_id": 60005,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 35040,
+      "record_size": 76,
+      "record_hex": "812f0400fdeb0000812f05000000000100bbef000000000000100000000000000000000000000000000000000000000000000000002d002d0002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 35065,
+      "map_group_byte_hex": "10"
+    },
+    {
+      "scene_id": 12162,
+      "name": "瑪雅地窖二",
+      "map_group": 16,
+      "chest_count": 1,
+      "world_map_id": 16,
+      "portal_scene_id": 60005,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 35116,
+      "record_size": 76,
+      "record_hex": "822f0400feeb0000822f1a000000000100a9ef000000000000100000000000000000000000000000000000000000000000000000002d002d0002040c000c0000000000000000000000000000",
+      "map_group_byte_offset": 35141,
+      "map_group_byte_hex": "10"
+    },
+    {
+      "scene_id": 12206,
+      "name": "火山迷宮一",
+      "map_group": 14,
+      "chest_count": 2,
+      "world_map_id": 14,
+      "portal_scene_id": 60004,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 36940,
+      "record_size": 76,
+      "record_hex": "ae2f090016ec0000ae2f05000000000100690b0100000000000e0000000000000000000000000000000000000000000000000000c021c0210002040c000c0000000000000000000000000000",
+      "map_group_byte_offset": 36965,
+      "map_group_byte_hex": "0e"
+    },
+    {
+      "scene_id": 12267,
+      "name": "鳥居洞窟",
+      "map_group": 27,
+      "chest_count": 1,
+      "world_map_id": 27,
+      "portal_scene_id": 60011,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 38840,
+      "record_size": 76,
+      "record_hex": "eb2f04002fec0000eb2f1a0000000001007a0b0100000000001b0000000000000000000000000000000000000000000000000000f825f8250002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 38865,
+      "map_group_byte_hex": "1b"
+    },
+    {
+      "scene_id": 12274,
+      "name": "金閣寺一樓",
+      "map_group": 27,
+      "chest_count": 1,
+      "world_map_id": 27,
+      "portal_scene_id": 60011,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 39372,
+      "record_size": 76,
+      "record_hex": "f22f040036ec0000f22f050000000001004af00000000000001b0000000000000000000000000000000000000000000000000000002d002d0002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 39397,
+      "map_group_byte_hex": "1b"
+    },
+    {
+      "scene_id": 12276,
+      "name": "金閣寺三樓",
+      "map_group": 27,
+      "chest_count": 1,
+      "world_map_id": 27,
+      "portal_scene_id": 60011,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 39524,
+      "record_size": 76,
+      "record_hex": "f42f040038ec0000f42f050000000001004cf00000000000001b0000000000000000000000000000000000000000000000000000c021c0210002040c000c0000000000000000000000000000",
+      "map_group_byte_offset": 39549,
+      "map_group_byte_hex": "1b"
+    },
+    {
+      "scene_id": 12279,
+      "name": "山怪洞窟前段",
+      "map_group": 27,
+      "chest_count": 1,
+      "world_map_id": 27,
+      "portal_scene_id": 60011,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 39752,
+      "record_size": 76,
+      "record_hex": "f72f04003bec0000f72f05000000000100800b0100000000001b0000000000000000000000000000000000000000000000000000b81ab81a0002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 39777,
+      "map_group_byte_hex": "1b"
+    },
+    {
+      "scene_id": 12283,
+      "name": "蝦夷山洞二層",
+      "map_group": 28,
+      "chest_count": 1,
+      "world_map_id": 28,
+      "portal_scene_id": 12281,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 40056,
+      "record_size": 76,
+      "record_hex": "fb2f04003fec0000fb2f1a00000000010052f00000000000001c0000000000000000000000000000000000000000000000000000c021c0210002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 40081,
+      "map_group_byte_hex": "1c"
+    },
+    {
+      "scene_id": 12287,
+      "name": "鬼島洞窟地下一層",
+      "map_group": 30,
+      "chest_count": 1,
+      "world_map_id": 30,
+      "portal_scene_id": 12286,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 40360,
+      "record_size": 76,
+      "record_hex": "ff2f040043ec0000ff2f1e000000000100de0b0100000000001e0000000000000000000000000000000000000000000000000000602760270002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 40385,
+      "map_group_byte_hex": "1e"
+    },
+    {
+      "scene_id": 12357,
+      "name": "南極冰洞一層",
+      "map_group": 7,
+      "chest_count": 1,
+      "world_map_id": 7,
+      "portal_scene_id": 12355,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 42792,
+      "record_size": 76,
+      "record_hex": "4530040063ec000045300c0000000001005ff0000000000000070000000000000000000000000000000000000000000000000000002d002d0002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 42817,
+      "map_group_byte_hex": "07"
+    },
+    {
+      "scene_id": 12366,
+      "name": "南極冰洞二層",
+      "map_group": 7,
+      "chest_count": 1,
+      "world_map_id": 7,
+      "portal_scene_id": 12355,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 43476,
+      "record_size": 76,
+      "record_hex": "4e3004006cec00004e300c00000000010060f0000000000000070000000000000000000000000000000000000000000000000000002d002d0002040c000c0000000000000000000000000000",
+      "map_group_byte_offset": 43501,
+      "map_group_byte_hex": "07"
+    },
+    {
+      "scene_id": 12368,
+      "name": "雪島洞穴二層",
+      "map_group": 9,
+      "chest_count": 1,
+      "world_map_id": 9,
+      "portal_scene_id": 12367,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 43628,
+      "record_size": 76,
+      "record_hex": "503004006eec000050300500000000010062f0000000000000090000000000000000000000000000000000000000000000000000f825f8250002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 43653,
+      "map_group_byte_hex": "09"
+    },
+    {
+      "scene_id": 12369,
+      "name": "雪島洞穴三層",
+      "map_group": 9,
+      "chest_count": 1,
+      "world_map_id": 9,
+      "portal_scene_id": 12367,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 43704,
+      "record_size": 76,
+      "record_hex": "513004006fec000051300500000000010063f0000000000000090000000000000000000000000000000000000000000000000000f825f8250002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 43729,
+      "map_group_byte_hex": "09"
+    },
+    {
+      "scene_id": 12371,
+      "name": "雪島洞穴五層",
+      "map_group": 9,
+      "chest_count": 1,
+      "world_map_id": 9,
+      "portal_scene_id": 12367,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 43856,
+      "record_size": 76,
+      "record_hex": "5330040071ec000053300500000000010065f0000000000000090000000000000000000000000000000000000000000000000000002d002d0002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 43881,
+      "map_group_byte_hex": "09"
+    },
+    {
+      "scene_id": 12372,
+      "name": "雪島洞穴六層",
+      "map_group": 9,
+      "chest_count": 1,
+      "world_map_id": 9,
+      "portal_scene_id": 12367,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 43932,
+      "record_size": 76,
+      "record_hex": "5430040072ec000054300500000000010066f0000000000000090000000000000000000000000000000000000000000000000000f825f8250002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 43957,
+      "map_group_byte_hex": "09"
+    },
+    {
+      "scene_id": 12373,
+      "name": "雪島洞穴七層",
+      "map_group": 9,
+      "chest_count": 1,
+      "world_map_id": 9,
+      "portal_scene_id": 12367,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 44008,
+      "record_size": 76,
+      "record_hex": "5530040073ec000055300500000000010067f0000000000000090000000000000000000000000000000000000000000000000000f825f8250002040c000c0000000000000000000000000000",
+      "map_group_byte_offset": 44033,
+      "map_group_byte_hex": "09"
+    },
+    {
+      "scene_id": 12457,
+      "name": "朝鮮迷宮二層",
+      "map_group": 29,
+      "chest_count": 1,
+      "world_map_id": 29,
+      "portal_scene_id": 60013,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 45908,
+      "record_size": 76,
+      "record_hex": "a93004008cec0000a93005000000000100d20b0100000000001d0000000000000000000000000000000000000000000000000000002d002d0002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 45933,
+      "map_group_byte_hex": "1d"
+    },
+    {
+      "scene_id": 12463,
+      "name": "瀑布水窟",
+      "map_group": 29,
+      "chest_count": 1,
+      "world_map_id": 29,
+      "portal_scene_id": 60013,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 46364,
+      "record_size": 76,
+      "record_hex": "af300b0092ec0000af300c00000000010075f00000000000001d0000000000000000000000000000000000000000000000000000002d002d0002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 46389,
+      "map_group_byte_hex": "1d"
+    },
+    {
+      "scene_id": 12507,
+      "name": "金字塔密道四",
+      "map_group": 34,
+      "chest_count": 1,
+      "world_map_id": 34,
+      "portal_scene_id": 12500,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 47428,
+      "record_size": 76,
+      "record_hex": "db300400a0ec0000db301e000000000100f90b010000000000220000000000000000000000000000000000000000000000000000c021c0210002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 47453,
+      "map_group_byte_hex": "22"
+    },
+    {
+      "scene_id": 12512,
+      "name": "草原深處",
+      "map_group": 34,
+      "chest_count": 1,
+      "world_map_id": 34,
+      "portal_scene_id": 12500,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 47808,
+      "record_size": 76,
+      "record_hex": "e0300600a5ec0000e03005000000000100ed0b0100000000002200000000000000000000000000000000000000000000000000008c2d003200020439000c0000000000000000000000000100",
+      "map_group_byte_offset": 47833,
+      "map_group_byte_hex": "22"
+    },
+    {
+      "scene_id": 12552,
+      "name": "海風之屋",
+      "map_group": 24,
+      "chest_count": 1,
+      "world_map_id": 24,
+      "portal_scene_id": 60008,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 50772,
+      "record_size": 76,
+      "record_hex": "08310300ccec00000831180000000001009b0b0100000000001800000000000000000000000000000000000000000000000000008006000a0002040000000001000100400698080000000000",
+      "map_group_byte_offset": 50797,
+      "map_group_byte_hex": "18"
+    },
+    {
+      "scene_id": 12602,
+      "name": "吳哥窟",
+      "map_group": 19,
+      "chest_count": 1,
+      "world_map_id": 19,
+      "portal_scene_id": 12601,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 51304,
+      "record_size": 76,
+      "record_hex": "3a310400d3ec00003a311100000000010093f00000000000001300000000000000000000000000000000000000000000000000007c1ea22800020489000c0000000000000000000000000000",
+      "map_group_byte_offset": 51329,
+      "map_group_byte_hex": "13"
+    },
+    {
+      "scene_id": 12614,
+      "name": "暹邏密道一",
+      "map_group": 19,
+      "chest_count": 1,
+      "world_map_id": 19,
+      "portal_scene_id": 12601,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 52216,
+      "record_size": 76,
+      "record_hex": "46310400dfec000046310500000000010097f0000000000000130000000000000000000000000000000000000000000000000000201c201c0002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 52241,
+      "map_group_byte_hex": "13"
+    },
+    {
+      "scene_id": 12700,
+      "name": "非洲村落",
+      "map_group": 32,
+      "chest_count": 1,
+      "world_map_id": 32,
+      "portal_scene_id": 12700,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 57080,
+      "record_size": 76,
+      "record_hex": "9c3106001fed00009c3102000000000100b5f0000000000000200000000000000000000000000000000000000000000000000000842d003200020439000c0000000000000000000000000000",
+      "map_group_byte_offset": 57105,
+      "map_group_byte_hex": "20"
+    },
+    {
+      "scene_id": 12750,
+      "name": "空中花園",
+      "map_group": 34,
+      "chest_count": 1,
+      "world_map_id": 34,
+      "portal_scene_id": 12500,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 57688,
+      "record_size": 76,
+      "record_hex": "ce31020027ed0000ce312500000000010094ef0000000000002200000000000000000000000000000000000000000000000000005a1bc02b000204c7000c0000000000000000000000000000",
+      "map_group_byte_offset": 57713,
+      "map_group_byte_hex": "22"
+    },
+    {
+      "scene_id": 12800,
+      "name": "雅典城",
+      "map_group": 36,
+      "chest_count": 1,
+      "world_map_id": 36,
+      "portal_scene_id": 12800,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 59132,
+      "record_size": 76,
+      "record_hex": "003202003aed000000320100000000010095ef000000000000240000000000000000000000000000000000000000000000000000d80e8e3100020485010c0000000000000000000000000000",
+      "map_group_byte_offset": 59157,
+      "map_group_byte_hex": "24"
+    },
+    {
+      "scene_id": 12862,
+      "name": "墟無禁地",
+      "map_group": 26,
+      "chest_count": 1,
+      "world_map_id": 26,
+      "portal_scene_id": 12850,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 63844,
+      "record_size": 76,
+      "record_hex": "3e32040078ed00003e3205000000000100d4f00000000000001a0000000000000000000000000000000000000000000000000000002d002d0002040c000c0000000000000000000000000000",
+      "map_group_byte_offset": 63869,
+      "map_group_byte_hex": "1a"
+    },
+    {
+      "scene_id": 12875,
+      "name": "千葉楓樹林一",
+      "map_group": 0,
+      "chest_count": 1,
+      "world_map_id": null,
+      "portal_scene_id": null,
+      "mapped": false,
+      "unmapped_reason": "no_world_map_group",
+      "record_offset": 64832,
+      "record_size": 76,
+      "record_hex": "4b32060085ed00004b3205000000000100daf0000000000000000000000000000000000000000000000000000000000000000000822d003200020439000c0000000000000000000000000000",
+      "map_group_byte_offset": 64857,
+      "map_group_byte_hex": "00"
+    },
+    {
+      "scene_id": 12900,
+      "name": "烏龜島",
+      "map_group": 0,
+      "chest_count": 1,
+      "world_map_id": null,
+      "portal_scene_id": null,
+      "mapped": false,
+      "unmapped_reason": "no_world_map_group",
+      "record_offset": 65516,
+      "record_size": 76,
+      "record_hex": "64320a008eed0000643205000000000100e1f0000000000000000000000000000000000000000000000000000000000000000000803e104000020417000c0000000000000000000000000000",
+      "map_group_byte_offset": 65541,
+      "map_group_byte_hex": "00"
+    },
+    {
+      "scene_id": 12902,
+      "name": "遺跡島",
+      "map_group": 0,
+      "chest_count": 1,
+      "world_map_id": null,
+      "portal_scene_id": null,
+      "mapped": false,
+      "unmapped_reason": "no_world_map_group",
+      "record_offset": 65668,
+      "record_size": 76,
+      "record_hex": "66320a0090ed0000663205000000000100e2f0000000000000000000000000000000000000000000000000000000000000000000842d00320002043a000c0000000000000000000000000000",
+      "map_group_byte_offset": 65693,
+      "map_group_byte_hex": "00"
+    },
+    {
+      "scene_id": 12950,
+      "name": "菲律賓",
+      "map_group": 18,
+      "chest_count": 1,
+      "world_map_id": 18,
+      "portal_scene_id": 12950,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 67568,
+      "record_size": 76,
+      "record_hex": "96320a00a9ed0000963202000000000100eef0000000000000120000000000000000000000000000000000000000000000000000d42a2044000204c5000c0000000000000000000000000000",
+      "map_group_byte_offset": 67593,
+      "map_group_byte_hex": "12"
+    },
+    {
+      "scene_id": 13024,
+      "name": "珠江口",
+      "map_group": 0,
+      "chest_count": 1,
+      "world_map_id": null,
+      "portal_scene_id": null,
+      "mapped": false,
+      "unmapped_reason": "no_world_map_group",
+      "record_offset": 70456,
+      "record_size": 76,
+      "record_hex": "e0320a00cfed0000e0320a000000000100fdf0000000000000000000000000000000000000000000000000000000000000000000832d003200020439000c0000000000000000000100000000",
+      "map_group_byte_offset": 70481,
+      "map_group_byte_hex": "00"
+    },
+    {
+      "scene_id": 15002,
+      "name": "遺落空島",
+      "map_group": 0,
+      "chest_count": 1,
+      "world_map_id": null,
+      "portal_scene_id": null,
+      "mapped": false,
+      "unmapped_reason": "no_world_map_group",
+      "record_offset": 83452,
+      "record_size": 76,
+      "record_hex": "9a3a0100cbee00009a3a1800000000010053f10000000000000000000000000000000000000000000000000000000000000000004046c8320002040c00960000000000000000000100000000",
+      "map_group_byte_offset": 83477,
+      "map_group_byte_hex": "00"
+    },
+    {
+      "scene_id": 15038,
+      "name": "深黯碑廊",
+      "map_group": 0,
+      "chest_count": 1,
+      "world_map_id": null,
+      "portal_scene_id": null,
+      "mapped": false,
+      "unmapped_reason": "no_world_map_group",
+      "record_offset": 86188,
+      "record_size": 76,
+      "record_hex": "be3a0400eeee0000822ffe010000000100a40b010000000000000000000000000000000000000000000000000000000000000000002d002d0002040c000c0000000000000000000000000100",
+      "map_group_byte_offset": 86213,
+      "map_group_byte_hex": "00"
+    },
+    {
+      "scene_id": 15093,
+      "name": "巨鯨島",
+      "map_group": 41,
+      "chest_count": 1,
+      "world_map_id": 41,
+      "portal_scene_id": 15093,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 90368,
+      "record_size": 76,
+      "record_hex": "f53a010031ef0000f53a030200000001003d0c010000000000290000000000000000000000000000000000000000000000000000f055204e0002040c00390000000000000000000100000000",
+      "map_group_byte_offset": 90393,
+      "map_group_byte_hex": "29"
+    },
+    {
+      "scene_id": 15103,
+      "name": "希水族村莊",
+      "map_group": 42,
+      "chest_count": 1,
+      "world_map_id": 42,
+      "portal_scene_id": 0,
+      "mapped": false,
+      "unmapped_reason": "hidden_world_map_without_anchor",
+      "record_offset": 91128,
+      "record_size": 76,
+      "record_hex": "ff3a02003def0000ff3a08020000000100450c0100000000002a0000000000000000000000000000000000000000000000000000001a0028000204ba000c0000000000000000000000000000",
+      "map_group_byte_offset": 91153,
+      "map_group_byte_hex": "2a"
+    },
+    {
+      "scene_id": 60015,
+      "name": "印加",
+      "map_group": 15,
+      "chest_count": 1,
+      "world_map_id": 15,
+      "portal_scene_id": 60015,
+      "mapped": true,
+      "unmapped_reason": null,
+      "record_offset": 101464,
+      "record_size": 76,
+      "record_hex": "6fea0100c9ee00006fea170000000001008fef0000000000000f00000000000000000000000000000000000000000000000000003024c05d0002043e010c0000000000000000000100000000",
+      "map_group_byte_offset": 101489,
+      "map_group_byte_hex": "0f"
+    }
+  ],
+  "projection": {
+    "width": 2580.0,
+    "height": 1890.0,
+    "formula": "x=width/2+anchoredPosition.x+iconOffset.x; y=height/2-anchoredPosition.y-iconOffset.y",
+    "preserveAspectRatio": "none",
+    "asset_evidence": "evidence/world-assets.json"
+  },
+  "coverage": {
+    "chest_maps": 57,
+    "chests": 58,
+    "world_points": 27,
+    "mapped_maps": 42,
+    "mapped_chests": 43,
+    "unmapped_maps": 15,
+    "unmapped_chests": 15,
+    "no_map_group": 14,
+    "hidden_world_map_without_anchor": 1
+  },
+  "mapping_authority": "UIWorldMap._TransformStageID: scene.mapGroup -> WorldMapData.GetDataByID -> PortalSceneID -> GameObject_Map%05d",
+  "lua": {
+    "profile_id": "installed-re-client-20260827",
+    "profile_sha256": "87db7efe6adb5d7e464612005e826729157afd6ea862a5d68339ee8156214264",
+    "client_identity": {
+      "game_assembly_sha256": "5683ca04c025ada275c5412101d3fe40bec55b31fd268f30370b91dd612574d7",
+      "metadata_sha256": "7f389eb79e4b94ecb65d43d054c6d88c9749bc67a651d90a66a0494285e342ce",
+      "metadata_version": 31
+    },
+    "source_count": 866,
+    "roundtrips_verified": 866,
+    "sources": [
+      {
+        "path": "Data/WorldMapData.lua",
+        "encrypted_bytes": 2992,
+        "encrypted_sha256": "58cd2bce7f93198ba3f16042a34a7bbcb7be582d17fd9d9cff9024dbfe9ec90b",
+        "decrypted_bytes": 2976,
+        "decrypted_sha256": "684e21e02b2ea681771bebe05da554733ec05384deb53c4b371d04e7433a793d",
+        "line_count": 84
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "encrypted_bytes": 25504,
+        "encrypted_sha256": "83ccc8dbb2547c0e1e20a0c711276b6feeb3a25544cda954f4c86fa9f7eb8641",
+        "decrypted_bytes": 25494,
+        "decrypted_sha256": "a675559a7039cd91b54301125d7b302c4c3340cfba139b14e56ee5a8796c0915",
+        "line_count": 799
+      },
+      {
+        "path": "UI/Module/UIWorldMapModule.lua",
+        "encrypted_bytes": 58288,
+        "encrypted_sha256": "01e06a5ae1a446c7407bd7609fd36963cfe1b21bfba34e88c58ae70f9817f846",
+        "decrypted_bytes": 58282,
+        "decrypted_sha256": "c952783c066833222f8c0f7d4d5589b5ea81af079f7df3177a370343e99cb200",
+        "line_count": 1566
+      }
+    ],
+    "snippets": [
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 10,
+        "text": "function WorldMapData.OnLoadData(binaryReader)"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 11,
+        "text": "    if binaryReader == nil then return end"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 12,
+        "text": ""
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 13,
+        "text": "    local count = binaryReader:ReadInt32();"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 14,
+        "text": "    for i = 1, count do"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 15,
+        "text": "        local data = WorldMapData:New(binaryReader);"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 16,
+        "text": ""
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 17,
+        "text": "        worldMapData[data.PortalSceneID] = data;"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 18,
+        "text": "    end"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 19,
+        "text": ""
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 20,
+        "text": "    if LuaHelper.CheckEndOfFile(binaryReader) == false then"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 21,
+        "text": "        logError(\"WorldMapData Load Fail !! Size\");"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 22,
+        "text": "    else"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 23,
+        "text": "        logWarn(\"WorldMapData Loaded !! Count = %s\", count);"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 24,
+        "text": "    end"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 25,
+        "text": "end"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 26,
+        "text": ""
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 27,
+        "text": "function WorldMapData:New(binaryReader)"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 28,
+        "text": "    local self = {};"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 29,
+        "text": "    setmetatable(self, WorldMapData);"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 30,
+        "text": ""
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 31,
+        "text": "    self.ID = binaryReader:ReadUInt16();    -- 序號"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 32,
+        "text": "    self.MapName = binaryReader:ReadUInt32();   -- 地圖名稱(字串編號)"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 33,
+        "text": "    self.SceneDesc = binaryReader:ReadUInt32(); -- 場景介紹"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 34,
+        "text": "    self.OpenSetting = binaryReader:ReadByte(); -- 開放(0開放、1不開放) 不開放就不顯示在世界地圖上"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 35,
+        "text": "    self.Area = binaryReader:ReadUInt32();  -- 地區"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 36,
+        "text": "    self.ShowX = binaryReader:ReadUInt16(); -- 顯示座標X"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 37,
+        "text": "    self.ShowY = binaryReader:ReadUInt16(); -- 顯示座標Y"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 38,
+        "text": "    self.ExploreLv = binaryReader:ReadUInt32(); -- 探索難度字串"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 39,
+        "text": "    self.MarkID = binaryReader:ReadUInt16();    -- 曾到過完成標記"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 40,
+        "text": "    self.PortalSceneID = binaryReader:ReadUInt16(); -- 傳送場景ID"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 41,
+        "text": "    self.PortalX = binaryReader:ReadUInt16();   -- 傳送座標X"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 42,
+        "text": "    self.PortalY = binaryReader:ReadUInt16();   -- 傳送座標Y"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 43,
+        "text": "    self.DummyLV = binaryReader:ReadUInt16();   -- 木人樁等級"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 44,
+        "text": "    self.DummyAreaName = binaryReader:ReadUInt16(); -- 木人樁地區名稱"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 45,
+        "text": "    self.DummyPosX = binaryReader:ReadUInt16(); -- 木人樁座標X"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 46,
+        "text": "    self.DummyPosY = binaryReader:ReadUInt16(); -- 木人樁座標Y"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 47,
+        "text": "    self.UISellID = binaryReader:ReadUInt16();  -- 傳送費用(介消編號)"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 61,
+        "text": "---@return boolean"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 62,
+        "text": "--- 檢查是否開放要顯示在地圖上"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 63,
+        "text": "function WorldMapData:Hidden()"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 64,
+        "text": "    return (self.OpenSetting == WorldMapData.OpenKind.Hidden);"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 65,
+        "text": "end"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 66,
+        "text": ""
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 67,
+        "text": "---@return boolean"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 68,
+        "text": "--- 檢查玩家是否到過該地點"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 69,
+        "text": "function WorldMapData:CheckArrived()"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 70,
+        "text": "    if markData[self.MarkID] == nil then"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 71,
+        "text": "        return false"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 72,
+        "text": "    end"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 73,
+        "text": ""
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 74,
+        "text": "    return EventManager.FindBitMissionDone(markData[self.MarkID].bitId);"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 75,
+        "text": "end"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 76,
+        "text": ""
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 77,
+        "text": "function WorldMapData.GetDataByID(id)"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 78,
+        "text": "    for k,v in pairs(worldMapData) do"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 79,
+        "text": "        if v.ID == id then"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 80,
+        "text": "            return v;"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 81,
+        "text": "        end"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 82,
+        "text": "    end"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 83,
+        "text": "    return nil;"
+      },
+      {
+        "path": "Data/WorldMapData.lua",
+        "line": 84,
+        "text": "end"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 94,
+        "text": "local function _UpdateRawImageCenter()"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 95,
+        "text": "\tif (MapMarks[nowSelect] ~= nil) and (MapMarks[nowSelect].BaseObject) then"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 96,
+        "text": "\t\t--停止滑動狀態"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 97,
+        "text": "\t\tScrollRect_MapMask:StopMovement();"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 98,
+        "text": ""
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 99,
+        "text": "\t\tlocal baseOjbPos = MapMarks[nowSelect].BaseObject.gameObject.transform.localPosition;"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 100,
+        "text": "\t\t--logError(\"[Debug] show local Position ID = %d, X = %s, Y = %s, z = %s\","
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 101,
+        "text": "\t\t--\t\tnowSelect, baseOjbPos.x, baseOjbPos.y, baseOjbPos.z);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 102,
+        "text": "\t\tlocal scrollX = math.Clamp((baseOjbPos.x * base.Slider_Zoom.value * -1), (-1 * XLimit), XLimit);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 103,
+        "text": "\t\tlocal scrollY = math.Clamp((baseOjbPos.y * base.Slider_Zoom.value * -1), (-1 * YLimit), YLimit);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 104,
+        "text": "\t\t--logError(\"[Debug] scrollVec3 X = %s, Y = %s\", scrollX, scrollY);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 105,
+        "text": "\t\tVec3Set(scrollVec3, scrollX, scrollY, 0)"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 106,
+        "text": "\t\t--base.RawImage_Map.gameObject.transform.localPosition = scrollVec3;"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 107,
+        "text": ""
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 108,
+        "text": "\t\tlocal sequence = DOTween.Sequence();"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 109,
+        "text": "\t\t-- 目前預設0.5秒"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 110,
+        "text": "\t\tsequence:Append(base.RawImage_Map.gameObject.transform:DOLocalMove(scrollVec3, 0.5, true));"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 111,
+        "text": "\tend"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 160,
+        "text": "\t\tbase.Text_DetailName.text = Text.Get(data.MapName);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 161,
+        "text": "\t\tbase.Text_DetailInfo.text = Text.Get(data.SceneDesc);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 162,
+        "text": "\t\tlocal worldMapData = stageData[WorldMapId];"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 163,
+        "text": "\t\tlocal portalX = data.ShowX * worldMapData.PosXRatio + worldMapData.SmallMapOffsetX;"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 164,
+        "text": "\t\tlocal portalY = data.ShowY* worldMapData.PosYRatio + worldMapData.SmallMapOffsetY;"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 165,
+        "text": "\t\tbase.Text_DetailCoordinate01.text = string.format(Text.Get(34160), portalX);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 166,
+        "text": "\t\tbase.Text_DetailCoordinate02.text = string.format(Text.Get(34161), portalY);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 617,
+        "text": "local function _UpdateGameObjects()"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 618,
+        "text": "\t-- 整理物件的編號 GameObject_Map以這個命名的為主"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 619,
+        "text": "\tlocal mapIDs = {};"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 620,
+        "text": "\tfor k, v in pairs(base) do"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 621,
+        "text": "\t\tlocal num = k:match(\"^GameObject_Map(%d+)\")"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 622,
+        "text": "\t\tif (num) and (v ~= nil) then"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 623,
+        "text": "\t\t\ttable.insert(mapIDs, tonumber(num));"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 624,
+        "text": "\t\tend"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 625,
+        "text": "\tend"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 626,
+        "text": ""
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 627,
+        "text": "\tfor sceneID, _ in pairs(worldMapData) do"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 628,
+        "text": "\t\tif not table.Contains(mapIDs, sceneID) then"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 629,
+        "text": "\t\t\t--logError(\"[Debug] worldMapData %d not exist add to mapIDs\","
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 630,
+        "text": "\t\t\t--\t\tsceneID)"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 631,
+        "text": "\t\t\ttable.insert(mapIDs, sceneID);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 632,
+        "text": "\t\tend"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 633,
+        "text": "\tend"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 634,
+        "text": ""
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 635,
+        "text": "\t-- 查看結果"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 636,
+        "text": "\t--for k, n in ipairs(mapIDs) do"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 637,
+        "text": "\t--\tlogError(\"[Debug] mapIDs %d = %d\", k, n);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 638,
+        "text": "\t--end"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 639,
+        "text": ""
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 640,
+        "text": "\tMapMarks = {}"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 641,
+        "text": "\tfor _, v in pairs(mapIDs) do"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 642,
+        "text": "\t\tlocal newObj = {};"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 643,
+        "text": "\t\t--logError(\"[Debug] Image_%05d\", v);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 644,
+        "text": "\t\t--logError(\"[Debug] Image_%05d\", v);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 645,
+        "text": "\t\t--logError(\"[Debug] Text_Lv%05d\", v);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 646,
+        "text": "\t\tnewObj.BaseObject= base[string.format(\"GameObject_Map%05d\", v)];"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 647,
+        "text": "\t\tnewObj.BaseImage = base[string.format(\"Image_%05d\", v)];"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 648,
+        "text": "\t\tnewObj.ImageBG = base[string.format(\"Image_BG%05d\", v)];"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 649,
+        "text": "\t\tnewObj.TextName = base[string.format(\"Text_%05d\", v)];"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 650,
+        "text": "\t\tnewObj.TextLV = base[string.format(\"Text_Lv%05d\", v)];"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 651,
+        "text": "\t\tnewObj.LVImageBG = base[string.format(\"Image_LvBG%05d\", v)];"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 652,
+        "text": "\t\tnewObj.BtnObject = base[string.format(\"GameObject_Btn%05d\", v)];"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 653,
+        "text": "\t\tif newObj.BaseObject ~= nil then"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 654,
+        "text": "\t\t\tnewObj.UI4Raycast = newObj.BtnObject:GetComponent(\"UIEmpty4Raycast\");"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 655,
+        "text": "\t\telse"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 656,
+        "text": "\t\t\tnewObj.UI4Raycast = nil;"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 657,
+        "text": "\t\tend"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 658,
+        "text": "\t\tif base[string.format(\"Event_%05d\", v)] ~= nil then"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 659,
+        "text": "\t\t\tbase[string.format(\"Event_%05d\", v)].parameter = v;"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 660,
+        "text": "\t\t\tbase[string.format(\"Event_%05d_Delegate\", v)] = OnClick_MapIcon;"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 661,
+        "text": "\t\tend"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 662,
+        "text": "\t\tif base[string.format(\"Event_Btn%05d\", v)] ~= nil then"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 663,
+        "text": "\t\t\tbase[string.format(\"Event_Btn%05d\", v)].parameter = v;"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 664,
+        "text": "\t\t\tbase[string.format(\"Event_Btn%05d_Delegate\", v)] = OnClick_MapIcon;"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 665,
+        "text": "\t\tend"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 666,
+        "text": "\t\t--local tempName = newObj.TextName.text;"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 667,
+        "text": "\t\tif worldMapData[v] ~= nil then"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 668,
+        "text": "\t\t\tif newObj.TextName ~= nil then"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 669,
+        "text": "\t\t\t\tnewObj.TextName.text = Text.Get(worldMapData[v].MapName);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 670,
+        "text": "\t\t\t\t--logError(\"[Debug] change ID = %d TextName %s to %s\","
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 671,
+        "text": "\t\t\t\t--\tv, tempName, newObj.TextName.text);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 672,
+        "text": "\t\t\tend"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 673,
+        "text": "\t\tend"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 674,
+        "text": "\t\tMapMarks[v] = newObj;"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 675,
+        "text": "\tend"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 785,
+        "text": "function UIWorldMap._TransformStageID(aStageID)"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 786,
+        "text": "\tif stageData[aStageID] == nil then"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 787,
+        "text": "\t\treturn aStageID;"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 788,
+        "text": "\tend"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 789,
+        "text": "\tlocal nowMapGroup = stageData[aStageID].mapGroup;"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 790,
+        "text": "\tlocal worldMap = WorldMapData.GetDataByID(nowMapGroup);"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 791,
+        "text": "\t-- 找不到世界地圖場景資料時 使用原本的場景編號"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 792,
+        "text": "\tif worldMap == nil then"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 793,
+        "text": "\t\treturn aStageID;"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 794,
+        "text": "\tend"
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 795,
+        "text": ""
+      },
+      {
+        "path": "UI/Logic/UIWorldMap.lua",
+        "line": 796,
+        "text": "\treturn worldMap.PortalSceneID;"
+      }
+    ],
+    "version_boundary": "Installed client Lua is 1.3.18; data and UI prefab are immutable managed 1.3.19. Actual source hashes are retained."
+  },
+  "unmapped_investigation": {
+    "eve_link_scene_count": 1103,
+    "eve_link_count": 2365,
+    "binary_link_count": 84,
+    "policy": "Undirected connectivity is diagnostic only; routes, reused templates, and names are not world-map region membership.",
+    "scenes": [
+      {
+        "scene_id": 10161,
+        "reachable_ungrouped_and_boundary_scenes": 6,
+        "first_boundaries": {
+          "map_group_7": {
+            "scene_path": [
+              10161,
+              12355
+            ],
+            "scene_names": [
+              "澳洲山頂通道",
+              "南極"
+            ],
+            "links": [
+              {
+                "line_number": 194,
+                "source_scene_id": 10161,
+                "door_index": 1,
+                "source_x": 270,
+                "source_y": 1532,
+                "destination_scene_id": 12355,
+                "destination_x": 1490,
+                "destination_y": 556,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": false
+              }
+            ]
+          }
+        },
+        "assigned_from_links": false
+      },
+      {
+        "scene_id": 10162,
+        "reachable_ungrouped_and_boundary_scenes": 1,
+        "first_boundaries": {},
+        "assigned_from_links": false
+      },
+      {
+        "scene_id": 11122,
+        "reachable_ungrouped_and_boundary_scenes": 8,
+        "first_boundaries": {},
+        "assigned_from_links": false
+      },
+      {
+        "scene_id": 11125,
+        "reachable_ungrouped_and_boundary_scenes": 6,
+        "first_boundaries": {
+          "world_scene_58001": {
+            "scene_path": [
+              11125,
+              11114,
+              11113,
+              58001
+            ],
+            "scene_names": [
+              "庫克船船艙一層",
+              "庫克船船艙走道",
+              "庫克船甲板",
+              "航海大地圖"
+            ],
+            "links": [
+              {
+                "line_number": 462,
+                "source_scene_id": 11114,
+                "door_index": 3,
+                "source_x": 991,
+                "source_y": 254,
+                "destination_scene_id": 11125,
+                "destination_x": 1572,
+                "destination_y": 2059,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": true
+              },
+              {
+                "line_number": 458,
+                "source_scene_id": 11113,
+                "door_index": 1,
+                "source_x": 1460,
+                "source_y": 800,
+                "destination_scene_id": 11114,
+                "destination_x": 238,
+                "destination_y": 666,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": true
+              },
+              {
+                "line_number": 3268,
+                "source_scene_id": 58001,
+                "door_index": 43,
+                "source_x": 7800,
+                "source_y": 9900,
+                "destination_scene_id": 11113,
+                "destination_x": 1026,
+                "destination_y": 615,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": true
+              }
+            ]
+          }
+        },
+        "assigned_from_links": false
+      },
+      {
+        "scene_id": 11132,
+        "reachable_ungrouped_and_boundary_scenes": 5,
+        "first_boundaries": {},
+        "assigned_from_links": false
+      },
+      {
+        "scene_id": 11164,
+        "reachable_ungrouped_and_boundary_scenes": 1,
+        "first_boundaries": {},
+        "assigned_from_links": false
+      },
+      {
+        "scene_id": 11176,
+        "reachable_ungrouped_and_boundary_scenes": 10,
+        "first_boundaries": {
+          "map_group_1": {
+            "scene_path": [
+              11176,
+              11171,
+              11170,
+              11169,
+              11168,
+              10082
+            ],
+            "scene_names": [
+              "沈船船艙一層",
+              "海溝左四",
+              "海溝左三",
+              "海溝左二",
+              "海溝左一",
+              "海底"
+            ],
+            "links": [
+              {
+                "line_number": 625,
+                "source_scene_id": 11176,
+                "door_index": 1,
+                "source_x": 1770,
+                "source_y": 705,
+                "destination_scene_id": 11171,
+                "destination_x": 1075,
+                "destination_y": 1180,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": false
+              },
+              {
+                "line_number": 610,
+                "source_scene_id": 11170,
+                "door_index": 2,
+                "source_x": 230,
+                "source_y": 1150,
+                "destination_scene_id": 11171,
+                "destination_x": 1450,
+                "destination_y": 1132,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": true
+              },
+              {
+                "line_number": 607,
+                "source_scene_id": 11169,
+                "door_index": 2,
+                "source_x": 230,
+                "source_y": 1150,
+                "destination_scene_id": 11170,
+                "destination_x": 1450,
+                "destination_y": 1132,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": true
+              },
+              {
+                "line_number": 603,
+                "source_scene_id": 11168,
+                "door_index": 1,
+                "source_x": 230,
+                "source_y": 1150,
+                "destination_scene_id": 11169,
+                "destination_x": 1450,
+                "destination_y": 1132,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": true
+              },
+              {
+                "line_number": 139,
+                "source_scene_id": 10082,
+                "door_index": 2,
+                "source_x": 270,
+                "source_y": 1330,
+                "destination_scene_id": 11168,
+                "destination_x": 1450,
+                "destination_y": 1132,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": true
+              }
+            ]
+          }
+        },
+        "assigned_from_links": false
+      },
+      {
+        "scene_id": 11182,
+        "reachable_ungrouped_and_boundary_scenes": 2,
+        "first_boundaries": {},
+        "assigned_from_links": false
+      },
+      {
+        "scene_id": 12875,
+        "reachable_ungrouped_and_boundary_scenes": 7,
+        "first_boundaries": {
+          "world_scene_58001": {
+            "scene_path": [
+              12875,
+              58001
+            ],
+            "scene_names": [
+              "千葉楓樹林一",
+              "航海大地圖"
+            ],
+            "links": [
+              {
+                "line_number": 3300,
+                "source_scene_id": 58001,
+                "door_index": 75,
+                "source_x": 8152,
+                "source_y": 2151,
+                "destination_scene_id": 12875,
+                "destination_x": 731,
+                "destination_y": 1892,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": true
+              }
+            ]
+          }
+        },
+        "assigned_from_links": false
+      },
+      {
+        "scene_id": 12900,
+        "reachable_ungrouped_and_boundary_scenes": 11,
+        "first_boundaries": {
+          "world_scene_58002": {
+            "scene_path": [
+              12900,
+              58002
+            ],
+            "scene_names": [
+              "烏龜島",
+              "地中海"
+            ],
+            "links": [
+              {
+                "line_number": 2053,
+                "source_scene_id": 12900,
+                "door_index": 1,
+                "source_x": 8020,
+                "source_y": 1960,
+                "destination_scene_id": 58002,
+                "destination_x": 3402,
+                "destination_y": 2844,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": false
+              }
+            ]
+          }
+        },
+        "assigned_from_links": false
+      },
+      {
+        "scene_id": 12902,
+        "reachable_ungrouped_and_boundary_scenes": 7,
+        "first_boundaries": {
+          "world_scene_58002": {
+            "scene_path": [
+              12902,
+              58002
+            ],
+            "scene_names": [
+              "遺跡島",
+              "地中海"
+            ],
+            "links": [
+              {
+                "line_number": 2084,
+                "source_scene_id": 12902,
+                "door_index": 2,
+                "source_x": 4120,
+                "source_y": 1240,
+                "destination_scene_id": 58002,
+                "destination_x": 2682,
+                "destination_y": 2730,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": false
+              }
+            ]
+          }
+        },
+        "assigned_from_links": false
+      },
+      {
+        "scene_id": 13024,
+        "reachable_ungrouped_and_boundary_scenes": 10,
+        "first_boundaries": {
+          "world_scene_58001": {
+            "scene_path": [
+              13024,
+              13023,
+              58001
+            ],
+            "scene_names": [
+              "珠江口",
+              "避風塘",
+              "航海大地圖"
+            ],
+            "links": [
+              {
+                "line_number": 2345,
+                "source_scene_id": 13023,
+                "door_index": 1,
+                "source_x": 480,
+                "source_y": 1060,
+                "destination_scene_id": 13024,
+                "destination_x": 5430,
+                "destination_y": 176,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": true
+              },
+              {
+                "line_number": 3301,
+                "source_scene_id": 58001,
+                "door_index": 76,
+                "source_x": 6464,
+                "source_y": 3514,
+                "destination_scene_id": 13023,
+                "destination_x": 858,
+                "destination_y": 736,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": true
+              }
+            ]
+          }
+        },
+        "assigned_from_links": false
+      },
+      {
+        "scene_id": 15002,
+        "reachable_ungrouped_and_boundary_scenes": 8,
+        "first_boundaries": {
+          "map_group_2": {
+            "scene_path": [
+              15002,
+              15039,
+              15038,
+              15036,
+              15079
+            ],
+            "scene_names": [
+              "遺落空島",
+              "封靈石窖",
+              "深黯碑廊",
+              "靈蝕中樞",
+              "暗影走廊"
+            ],
+            "links": [
+              {
+                "index": 35,
+                "source_scene_id": 15039,
+                "source_x": 889,
+                "source_y": 330,
+                "destination_scene_id": 15002,
+                "destination_x": 7536,
+                "destination_y": 340,
+                "source_asset": "DoorLinkData_C",
+                "traversed_reverse_for_diagnostic": true
+              },
+              {
+                "line_number": 3004,
+                "source_scene_id": 15039,
+                "door_index": 1,
+                "source_x": 2280,
+                "source_y": 1140,
+                "destination_scene_id": 15038,
+                "destination_x": 1643,
+                "destination_y": 875,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": false
+              },
+              {
+                "line_number": 2996,
+                "source_scene_id": 15036,
+                "door_index": 2,
+                "source_x": 1380,
+                "source_y": 1920,
+                "destination_scene_id": 15038,
+                "destination_x": 3221,
+                "destination_y": 1050,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": true
+              },
+              {
+                "line_number": 2995,
+                "source_scene_id": 15036,
+                "door_index": 1,
+                "source_x": 3240,
+                "source_y": 240,
+                "destination_scene_id": 15079,
+                "destination_x": 677,
+                "destination_y": 533,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": false
+              }
+            ]
+          }
+        },
+        "assigned_from_links": false
+      },
+      {
+        "scene_id": 15038,
+        "reachable_ungrouped_and_boundary_scenes": 8,
+        "first_boundaries": {
+          "map_group_2": {
+            "scene_path": [
+              15038,
+              15036,
+              15079
+            ],
+            "scene_names": [
+              "深黯碑廊",
+              "靈蝕中樞",
+              "暗影走廊"
+            ],
+            "links": [
+              {
+                "line_number": 2996,
+                "source_scene_id": 15036,
+                "door_index": 2,
+                "source_x": 1380,
+                "source_y": 1920,
+                "destination_scene_id": 15038,
+                "destination_x": 3221,
+                "destination_y": 1050,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": true
+              },
+              {
+                "line_number": 2995,
+                "source_scene_id": 15036,
+                "door_index": 1,
+                "source_x": 3240,
+                "source_y": 240,
+                "destination_scene_id": 15079,
+                "destination_x": 677,
+                "destination_y": 533,
+                "source_asset": "EveDoorLinks",
+                "traversed_reverse_for_diagnostic": false
+              }
+            ]
+          }
+        },
+        "assigned_from_links": false
+      }
+    ]
+  },
+  "public_world_sha256": "7a937250dc43b61d1f543071d546f40dae845de441f329b893b49bd9646f57d0"
+}

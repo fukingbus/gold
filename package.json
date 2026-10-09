@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "node --check app.js && node scripts/validate.mjs",
+    "check": "node --check app.js && node scripts/validate.mjs && node scripts/validate-world.mjs",
     "build": "node scripts/build.mjs",
     "preview": "node scripts/serve.mjs"
   },

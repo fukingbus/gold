@@ -3,7 +3,8 @@
 [開啟圖鑑](https://fukingbus.github.io/gold/)
 
 飄流幻境 Re 全地圖「金色寶箱」座標圖鑑，沿用天啟小幫手與聖殿秘笈的深色、金色介面。
-可垂直瀏覽、搜尋地圖、選取寶箱、縮放拖曳、開啟放大地圖，以及複製遊戲座標。
+以遊戲原始世界地圖瀏覽各區寶箱數量，點選地點放大並切換子地圖。
+保留垂直地圖清單、搜尋、寶箱選取、縮放拖曳及座標複製。
 
 ## 收錄範圍
 
@@ -20,11 +21,16 @@
 
 位置是客戶端預設資料；實際顯示、可開啟狀態、重生時間以伺服器為準。
 導航替代圖只表示靜態快取區域，不是物理障礙圖或即時導航服務。
-場景分區保留原始 `mapGroup` 編號，未臆測地理區域名稱。
+世界地圖採用原始 `WorldMap2D_Map` 位圖與 `UI_WorldMap` 的實際地點位置。
+`ScenesData.mapGroup → WorldMapData.ID → PortalSceneID` 是客戶端使用的對應：
+27 個有寶箱的地點包含 42 張子地圖、43 個寶箱。
+另外 15 張地圖、15 個寶箱保留在「其他地圖」，不臆造世界座標：
+14 張 `mapGroup=0`，另一張屬於沒有原生標記的 WorldMap42。
+入口連結已延伸檢查；模板或傳送關聯不能取代世界地圖的明確歸屬。
 
 ## 資料與驗證
 
-`data/chests.json` 與 `data/maps.json` 為網站資料；`evidence/` 保留精確來源雜湊、
+`data/chests.json`、`data/maps.json` 與 `data/world.json` 為網站資料；`evidence/` 保留精確來源雜湊、
 場景索引、58 組座標位元組、完整相關事件及地圖輸出證據。
 Lua 載入以 `eventNumber` 作為執行時場景鍵，不能以可能重複的 `mapNumber` 合併地圖。
 
@@ -39,6 +45,11 @@ imageY = 1024 - (mapHeight - gameY) * scale - SmallMapOffsetY
 所有 58 個標記均落在圖片邊界內。
 已安裝 Lua 與 1.3.19 封裝資源的版本差異在證據中保留，不宣稱遊戲即時狀態。
 
+世界地圖的原始位圖為 2048 × 2048；遊戲 RawImage 使用 2580 × 1890 的矩形，
+因此網頁依原生介面比例顯示。地點位置來自 prefab 的 RectTransform 與標記子物件，
+不是 `WorldMapData.ShowX/ShowY` 旅行座標。子地圖繼續使用上方的小地圖投影。
+`evidence/world.json` 與 `evidence/world-assets.json` 記錄原始資料列、來源雜湊與定位證據。
+
 ## 本機預覽
 
 使用 Node.js 20 以上，無需安裝 npm 相依套件。
@@ -50,13 +61,18 @@ npm run preview
 ```
 
 預覽網址為 `http://127.0.0.1:11329/gold/`，Ctrl+C 停止。
-`check` 驗證完整清單、獨立座標位元組、倍率、投影、圖片尺寸與 SHA-256。
+`check` 驗證完整清單、獨立座標位元組、倍率、投影、圖片尺寸與 SHA-256，
+以及世界地圖計數、所有子地圖覆蓋、原始分區資料列與 prefab 標記投影。
 `build` 僅將網站所需檔案放入 `dist/`；原始 bundle、模型及分析資料不會放入 Pages 成品。
 推送 `main` 後，GitHub Actions 自動檢查、建立並部署 GitHub Pages。
 
 `scripts/extract_chests.py` 與 `scripts/export_maps.py` 可使用指定的本機 WLRE 資料管線重建資料。
 它們需要 Python 3.12+、WLRE 套件相依套件與對應版本的封裝資源；詳見各腳本 `--help`。
 原始遊戲封裝未隨 repository 發布。
+
+世界地圖素材先使用 `scripts/export_world_assets.py` 從同版、catalog 驗證的 UI 與 texture
+bundle 匯出，再以 `scripts/export_world.py` 建立場景對應。後者可直接使用保存的
+`--lua-evidence evidence/world.json`，不依賴暫存的 Lua 調查輸出；其餘路徑參數見 `--help`。
 
 ## 著作權
 
